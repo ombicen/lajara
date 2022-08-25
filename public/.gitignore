@@ -1,0 +1,4 @@
+#ignore all
+./*
+#expect wp-content
+!./wp-content
