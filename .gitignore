@@ -1,4 +1,7 @@
 #ignore all
 public/wp-includes/
 public/wp-admin/
-public/.php
+public/*.php
+
+#not wp content
+!public/wp-content/*.php
