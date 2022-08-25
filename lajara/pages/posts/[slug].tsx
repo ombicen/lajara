@@ -57,6 +57,7 @@ export default function Post({ post, posts, preview }) {
                         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
                     </>
                 )}
+                <div>asoasda</div>
             </Container>
         </Layout>
     )
