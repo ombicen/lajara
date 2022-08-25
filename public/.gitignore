@@ -1,4 +1,4 @@
 #ignore all
-./wp-includes
-./wp-admin
-./.php
+/wp-includes
+/wp-admin
+/.php
