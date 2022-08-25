@@ -1,4 +1,4 @@
 #ignore all
-./*
-#expect wp-content
-!./wp-content
+./wp-includes
+./wp-admin
+./.php
