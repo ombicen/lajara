@@ -21,13 +21,7 @@ export default function Navbar({ navItems }) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
-            MUI
-          </Typography>
+          <img src="" 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {menuItems.map((item) => (
               <Button key={item.label} sx={{ color: "#fff" }}>
