@@ -4,20 +4,21 @@ import { fetchAPI } from '../lib/api'
 import Hero from '../components/hero'
 import LogoDisplay from '../components/logoDisplay'
 import LandingAbout from '../components/landingAbout'
-
 export default function Index({ homePost }) {
   // console.log(homePost)
 
   return (
-    <Container>
-      <Hero data={homePost.pageBy.startsida_acf.bildspel}></Hero>
-      <LogoDisplay data={homePost.pageBy.startsida_acf.samarbetspartner}></LogoDisplay>
-      <LandingAbout data={homePost.pageBy.startsida_acf.inlaggSammanfattning} />
-      {/* <PostExcerpt data={homePost.pageBy.startsida_acf.inlaggSammanfattning}></PostExcerpt>
+    <>
+
+      <Container>
+        <Hero data={homePost.pageBy.startsida_acf.bildspel}></Hero>
+        <LogoDisplay data={homePost.pageBy.startsida_acf.samarbetspartner}></LogoDisplay>
+        <LandingAbout data={homePost.pageBy.startsida_acf.inlaggSammanfattning} />
+        {/* <PostExcerpt data={homePost.pageBy.startsida_acf.inlaggSammanfattning}></PostExcerpt>
       <Properties data={homePost.bostader}></Properties>
       <News data={homePost.posts}></News> */}
-    </Container>
-
+      </Container>
+    </>
   )
 }
 
@@ -35,6 +36,11 @@ export const getStaticProps: GetStaticProps = async () => {
           }
         }
       }
+    }
+    customLogo {
+      file
+      height
+      width
     }
   }
   `)
@@ -102,7 +108,7 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   }`)
   return {
-    props: { homePost,menuItems },
+    props: { homePost, menuItems },
     revalidate: 3600,
   }
 }
