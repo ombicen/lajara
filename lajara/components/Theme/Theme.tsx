@@ -27,11 +27,27 @@ const theme = createTheme({
             fontSize: 34,
             fontWeight: 500,
         },
+        button: {
+            textTransform: 'none'
+        }
+    },
+    components: {
+        // Name of the component
+        MuiButton: {
+            styleOverrides: {
+                // Name of the slot
+                root: {
+                    // Some CSS
+                    borderRadius: '100px',
+                },
+            },
+        },
     },
     props: {
         MuiAppBar: {
             color: 'transparent',
         },
+
     },
 });
 export default theme;

@@ -13,7 +13,6 @@ import styles from './navbar.module.css'
 export default function Navbar({ navItems }) {
   let menuItems = navItems.menu.menuItems.edges;
   let logo = navItems.customLogo;
-  console.log("Nav", menuItems);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar component="nav" position="absolute" className={styles.navbar}>
@@ -22,7 +21,7 @@ export default function Navbar({ navItems }) {
           <Box>
             <Image src={logo.file} alt={logo.alt} height={50} width={150} />
           </Box>
-          <Box sx={{ display: { xs: "none", sm: "block" }, }}>
+          <Box sx={{ display: { xs: "none", sm: "flex" }, gap: "25px", position: "absolute", marginLeft: "50%", transform: "translateX(-50%)" }}>
             {menuItems.map((item) => (
               <Link href={item.node.path} key={item.label} sx={{ color: "#fff" }}>
                 {item.node.label}
