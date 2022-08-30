@@ -69,9 +69,31 @@ export const getStaticProps: GetStaticProps = async ({
     previewData,
 }) => {
     const data = await getPostAndMorePosts(params?.slug, preview, previewData)
-
+    const menuItems = await fetchAPI(`
+    {
+      menu(id: "dGVybToy") {
+        name
+        slug
+        menuItems {
+          edges {
+            node {
+              label
+              url
+              path
+            }
+          }
+        }
+      }
+      customLogo {
+        file
+        height
+        width
+      }
+    }
+    `)
     return {
         props: {
+            menuItems,
             preview,
             post: data.post,
             posts: data.posts,

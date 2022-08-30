@@ -4,8 +4,6 @@ import Navbar from './Navbar/navbar'
 
 
 export default function Layout({ children }) {
-  console.log('children', children);
-
   const { menuItems: navItems } = children.props;
   return (
     <>

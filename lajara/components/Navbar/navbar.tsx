@@ -5,6 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
+import Link from 'next/link'
 import IconButton from "@mui/material/IconButton";
 import Image from "../../node_modules/next/image";
 import styles from './navbar.module.css'
@@ -15,7 +16,7 @@ export default function Navbar({ navItems }) {
   console.log("Nav", menuItems);
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar component="nav" className={styles.navbar}>
+      <AppBar component="nav" position="absolute" className={styles.navbar}>
         <Toolbar className={styles.navigation}>
 
           <Box>
@@ -23,9 +24,9 @@ export default function Navbar({ navItems }) {
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" }, }}>
             {menuItems.map((item) => (
-              <Button key={item.label} sx={{ color: "#fff" }}>
+              <Link href={item.node.path} key={item.label} sx={{ color: "#fff" }}>
                 {item.node.label}
-              </Button>
+              </Link>
             ))}
           </Box>
           <IconButton

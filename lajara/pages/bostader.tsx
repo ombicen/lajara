@@ -1,29 +1,22 @@
 import { GetStaticProps } from 'next'
 import Container from '../components/container'
 import { fetchAPI } from '../lib/api'
-import Hero from '../components/Hero/hero'
-import LogoDisplay from '../components/logoDisplay'
-import LandingAbout from '../components/landingAbout'
+
 export default function Index({ homePost }) {
-  // console.log(homePost)
+    // console.log(homePost)
 
-  return (
-    <>
+    return (
+        <>
 
-      <Container>
-        <Hero data={homePost.pageBy.startsida_acf.bildspel}></Hero>
-        <LogoDisplay data={homePost.pageBy.startsida_acf.samarbetspartner}></LogoDisplay>
-        <LandingAbout data={homePost.pageBy.startsida_acf.inlaggSammanfattning} />
-        {/* <PostExcerpt data={homePost.pageBy.startsida_acf.inlaggSammanfattning}></PostExcerpt>
-      <Properties data={homePost.bostader}></Properties>
-      <News data={homePost.posts}></News> */}
-      </Container>
-    </>
-  )
+            <Container>
+
+            </Container>
+        </>
+    )
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const menuItems = await fetchAPI(`
+    const menuItems = await fetchAPI(`
   {
     menu(id: "dGVybToy") {
       name
@@ -45,7 +38,7 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   }
   `)
-  const homePost = await fetchAPI(` {
+    const homePost = await fetchAPI(` {
     pageBy(uri: "/") {
       id
       title
@@ -108,8 +101,8 @@ export const getStaticProps: GetStaticProps = async () => {
       }
     }
   }`)
-  return {
-    props: { homePost, menuItems },
-    revalidate: 3600,
-  }
+    return {
+        props: { homePost, menuItems },
+        revalidate: 3600,
+    }
 }
