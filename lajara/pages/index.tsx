@@ -1,8 +1,8 @@
 import { GetStaticProps } from 'next'
 import Container from '../components/container'
 import { fetchAPI } from '../lib/api'
-import Hero from '../components/Hero/hero'
-import LogoDisplay from '../components/logoDisplay'
+import Hero from '../components/Hero/index'
+import LogoDisplay from '../components/logoDisplay/index'
 import LandingAbout from '../components/landingAbout'
 export default function Index({ homePost }) {
   // console.log(homePost)

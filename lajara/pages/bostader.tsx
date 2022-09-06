@@ -3,20 +3,20 @@ import Container from '../components/container'
 import { fetchAPI } from '../lib/api'
 
 export default function Index({ homePost }) {
-    // console.log(homePost)
+  // console.log(homePost)
 
-    return (
-        <>
+  return (
+    <>
 
-            <Container>
+      <Container>
 
-            </Container>
-        </>
-    )
+      </Container>
+    </>
+  )
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const menuItems = await fetchAPI(`
+  const menuItems = await fetchAPI(`
   {
     menu(id: "dGVybToy") {
       name
@@ -38,7 +38,7 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   }
   `)
-    const homePost = await fetchAPI(` {
+  const homePost = await fetchAPI(` {
     pageBy(uri: "/") {
       id
       title
@@ -101,8 +101,8 @@ export const getStaticProps: GetStaticProps = async () => {
       }
     }
   }`)
-    return {
-        props: { homePost, menuItems },
-        revalidate: 3600,
-    }
+  return {
+    props: { homePost, menuItems },
+    revalidate: 3600,
+  }
 }

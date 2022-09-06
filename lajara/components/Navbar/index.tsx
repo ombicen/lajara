@@ -1,16 +1,26 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+import {
+  Toolbar,
+  AppBar,
+  Box,
+  IconButton,
+  Drawer,
+  List,
+  ListItem, ListItemButton
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from 'next/link'
-import IconButton from "@mui/material/IconButton";
+
 import Image from "../../node_modules/next/image";
 import styles from './navbar.module.css'
+import { useState } from "react";
+
 
 export default function Navbar({ navItems }) {
+  const [drawer, setDrawer] = useState(false);
+  const toggleDrawer = () => {
+    setDrawer(!drawer)
+  }
   let menuItems = navItems.menu.menuItems.edges;
   let logo = navItems.customLogo;
   return (
@@ -34,12 +44,36 @@ export default function Navbar({ navItems }) {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
+            onClick={() => toggleDrawer()}
           >
             {" "}
             <MenuIcon />
           </IconButton>
         </Toolbar>
       </AppBar>
+      <Drawer
+        anchor={'right'}
+        open={drawer}
+        onClose={() => toggleDrawer()}
+
+      >
+        <Box>
+          <List>
+            {menuItems.map((item) => (
+              <ListItem key={item.label} disablePadding>
+                <ListItemButton>
+
+                  <Link href={item.node.path} key={item.label} sx={{ color: "#fff" }}>
+
+                    {item.node.label}
+                  </Link>
+                </ListItemButton>
+              </ListItem>
+
+            ))}
+          </List>
+        </Box>
+      </Drawer >
     </Box >
   );
 }

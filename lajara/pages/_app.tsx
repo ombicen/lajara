@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import '../styles/globals.css'
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from '../components/Theme/theme'
+import theme from '../components/Theme/index'
 
 
 function MyApp({ Component, pageProps }: AppProps) {
