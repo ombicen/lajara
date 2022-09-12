@@ -1,6 +1,6 @@
 import BostadCard from './BostadCard'
 import styles from './properties.module.css'
-import { Container } from '@mui/material';
+import { Container, Grid, Box } from '@mui/material';
 
 const Properties = ({ data }) => {
     console.log('data', data);
@@ -11,9 +11,14 @@ const Properties = ({ data }) => {
                 maxWidth: "1400px",
                 display: "flex"
             }}>
-                {
-                    data.nodes.map(bostad => (<BostadCard key={bostad.title} data={bostad} />))
-                }
+
+                <Grid container spacing={5}>
+
+                    {
+                        data.nodes.map(bostad => (<Grid item xs={6}><BostadCard key={bostad.title} data={bostad} /></Grid>))
+                    }
+                </Grid>
+
             </Container>
         </div>
     );

@@ -28,7 +28,7 @@ const LandingAbout = ({ data }) => {
         </Grid>
         <Grid xs={12} md={7}>
           <h2>{data.title}</h2>
-          <p dangerouslySetInnerHTML={{ __html: data.content }} />
+          <div dangerouslySetInnerHTML={{ __html: data.content }} />
           <Button href={"#"} variant={"contained"} gap={"20px"}>
             Om våra bostäder{" "}
             <ArrowForwardRoundedIcon sx={{ fontSize: 20, marginLeft: 1 }} />
