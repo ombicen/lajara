@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.0.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-08-22 07:23:22+0000\n"
+"PO-Revision-Date: 2022-09-05 13:34:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,162 +34,162 @@ msgstr "Europe/Stockholm"
 msgid "Continue"
 msgstr "Fortsätt"
 
-#: wp-admin/about.php:334
+#: wp-admin/about.php:359
 msgid "https://make.wordpress.org/core/2022/05/03/wordpress-6-0-field-guide/"
 msgstr "https://make.wordpress.org/core/2022/05/03/wordpress-6-0-field-guide/"
 
 #. translators: %s: WordPress 6.0 Release Notes link.
-#: wp-admin/about.php:344
+#: wp-admin/about.php:369
 msgid "<a href=\"%s\">Read the WordPress 6.0 Release Notes</a> for more information on the included enhancements and issues fixed, installation information, developer notes and resources, release contributors, and the list of file changes in this release."
 msgstr "I <a href=\"%s\">versionspresentationen för WordPress 6.0</a> finns det mer information om de inkluderade förbättringarna och de rättade felen. Där finns även installationsanvisningar, information för utvecklare, uppgifter om vilka som bidragit till utgåvan samt en lista över vilka filer som ändrats i denna utgåva."
 
 #. translators: %s: WordPress 6.0 Field Guide link.
-#: wp-admin/about.php:333
+#: wp-admin/about.php:358
 msgid "Check out the latest version of the <a href=\"%s\">WordPress Field Guide</a>. It is overflowing with detailed developer notes to help you build with WordPress."
 msgstr "Kolla in den senaste versionen av <a href=\"%s\">WordPress Field Guide</a>. Där finns ett överflöd av detaljerad information för utvecklare som hjälp för att kunna bygga med WordPress."
 
 #. translators: 1: Learn WordPress workshops link, 2: Learn WordPress social
 #. learning link.
-#: wp-admin/about.php:321
+#: wp-admin/about.php:346
 msgid "Explore <a href=\"%1$s\">learn.wordpress.org/&#8203;workshops</a> for quick how-to videos and lots more on new features in WordPress. Or join a live <a href=\"%2$s\">interactive online learning session</a> on a specific WordPress topic."
 msgstr "Utforska <a href=\"%1$s\">learn.wordpress.org/&#8203;workshops</a> där du kan hitta instruktionsvideor m.m. om de nya funktionerna i WordPress. Eller delta i en <a href=\"%2$s\">interaktiv online-lektion</a> om ett visst WordPress-ämne."
 
 #. translators: %s: 6.0 overview video link.
-#: wp-admin/about.php:307
+#: wp-admin/about.php:332
 msgid "See WordPress 6.0 in action! <a href=\"%s\">Watch a brief overview video</a> highlighting some of the major features debuting in WordPress 6.0."
 msgstr "Se WordPress 6.0 i full drift! <a href=\"%s\">Titta på en kort översiktsvideo</a> som belyser några av de viktigaste nya funktionerna i WordPress 6.0."
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:298
+#: wp-admin/about.php:323
 msgid "Learn more about WordPress %s"
 msgstr "Lär dig mer om WordPress %s"
 
-#: wp-admin/about.php:290
+#: wp-admin/about.php:315
 msgid "Exploring WordPress 6.0 video"
 msgstr "Video: utforska WordPress 6.0"
 
-#: wp-admin/about.php:281
+#: wp-admin/about.php:306
 msgid "Use the gap support functionality in the Gallery block to create different looks–from adding spacing between all images, to removing spacing altogether."
 msgstr "Använd stödet för avståndsjustering i galleriblocket för att skapa olika utseenden genom att t.ex. lägga in extra avstånd mellan varje bild eller kanske helt eliminera avstånden."
 
-#: wp-admin/about.php:271
+#: wp-admin/about.php:296
 msgid "Switch between stack, row, and group variations to position groups of blocks with more layout flexibility."
 msgstr "Växla mellan varianterna trave, rad och grupp för att med större flexibilitet positionera grupper av block i din layout."
 
-#: wp-admin/about.php:263
+#: wp-admin/about.php:288
 msgid "Control gaps, margins, typography, and more on a collection of blocks, all at once, in the Group block."
 msgstr "I gruppblocket styr du över mellanrum, marginaler, typografi och mer samtidigt, i en samling block."
 
-#: wp-admin/about.php:252
+#: wp-admin/about.php:277
 msgid "Transparency levels for your colors allow for even more creative color options."
 msgstr "Opacitetsnivåer för dina färger möjliggör ännu kreativare färginställningar."
 
-#: wp-admin/about.php:236
+#: wp-admin/about.php:261
 msgid "New border controls offer a simpler way to set your border exactly as you like it."
 msgstr "Nya reglage för ramar gör det enklare att ställa in din ram precis som du vill ha den."
 
-#: wp-admin/about.php:228
+#: wp-admin/about.php:253
 msgid "A new color panel design saves space, but still shows your options at a glance."
 msgstr "En ny design för färgpanelen sparar utrymme, men visar ändå dina alternativ enkelt och tydligt."
 
-#: wp-admin/about.php:216
+#: wp-admin/about.php:241
 msgid "Some highlights for 6.0 include:"
 msgstr "Bland höjdpunkterna i 6.0 finns bland annat:"
 
-#: wp-admin/about.php:215
+#: wp-admin/about.php:240
 msgid "Design tools grow more powerful and intuitive with each release."
 msgstr "Designverktygen blir mer kraftfulla och intuitiva för varje ny utgåva."
 
-#: wp-admin/about.php:212
+#: wp-admin/about.php:237
 msgid "Additional Design Tools"
 msgstr "Ytterligare designverktyg"
 
-#: wp-admin/about.php:202
+#: wp-admin/about.php:227
 msgid "Now you can lock your blocks. Choose to disable the option to move a block, remove a block, or both. This simplifies project handover, allowing your clients to unleash their creativity without worrying about accidentally breaking their site in the process."
 msgstr "Nu kan du låsa dina block. Välj att inaktivera möjligheten att flytta eller ta bort ett block, eller både och. Det gör det enklare att lämna över projekt – dina kunder kan använda sin kreativitet utan att de av misstag riskerar att har sönder sin webbplats."
 
-#: wp-admin/about.php:199
+#: wp-admin/about.php:224
 msgid "Block Locking Controls"
 msgstr "Möjlighet att låsa block"
 
-#: wp-admin/about.php:185
+#: wp-admin/about.php:210
 msgid "New keyboard shortcuts enable you to select multiple blocks from the list view, modify them in bulk, and drag-and-drop them within the list. List View can be opened and closed easily; it comes collapsed by default and it automatically expands to the current selection whenever you select a block."
 msgstr "Nya tangentkombinationer låter dig markera flera block i listvyn, massredigera dem och dra och släppa dem inom listan. Det är enkelt att öppna och stänga listvyn – som standard är den stängd, men den expanderas automatiskt till den aktuella markeringen när du väljer något block."
 
-#: wp-admin/about.php:182
+#: wp-admin/about.php:207
 msgid "Better List View"
 msgstr "Bättre listvy"
 
 #. translators: %s Working with Patterns dev note link.
-#: wp-admin/about.php:171
+#: wp-admin/about.php:196
 msgid "Patterns will now appear when you need them in even more places, like in the quick inserter or when creating a new header or footer. If you&#8217;re a block theme author, you can even <a href=\"%s\">register patterns from the Pattern Directory using <code>theme.json</code></a>, enabling you to prioritize specific patterns that are most helpful to your theme&#8217;s users."
 msgstr "Mönster visas nu på ännu fler ställen när de behövs, till exempel i snabbinfogaren eller när man skapar nytt sidhuvud eller ny sidfot. Om du är en blocktemaförfattare kan du till och med <a href=\"%s\">registrera mönster från ”Mönsterkatalogen” i <code>theme.json</code></a> för att prioritera vissa mönster som är mest användbara för ditt temas användare."
 
-#: wp-admin/about.php:165
+#: wp-admin/about.php:190
 msgid "Integrated Patterns"
 msgstr "Integrerade mönster"
 
-#: wp-admin/about.php:155
+#: wp-admin/about.php:180
 msgid "The query block supports filtering on multiple authors, support for custom taxonomies, and support for customizing what is shown when there are no results."
 msgstr "Frågeblocket har nu stöd för filtrering på flera författare, stöd för anpassade taxonomier och låter användaren anpassa vad som visas när sökningen inte ger några resultat."
 
-#: wp-admin/about.php:149
+#: wp-admin/about.php:174
 msgid "While editing a template, at the root, or between blocks, the quick inserter shows you patterns and template parts to help you work faster and discover new layout options."
 msgstr "När du redigerar en mall och befinner dig längst upp eller mellan block visar snabbinfogaren mönster och malldelar så att du kan arbeta snabbare och upptäcka nya layoutalternativ."
 
-#: wp-admin/about.php:143
+#: wp-admin/about.php:168
 msgid "New featured image sizing controls make it easier to get the results you want."
 msgstr "Nya reglage för storlek på utvald bild gör det enklare att få önskat resultat."
 
-#: wp-admin/about.php:142
+#: wp-admin/about.php:167
 msgid "Featured images can be used in the cover block."
 msgstr "Utvalda bilder kan användas i omslagsblocket."
 
-#: wp-admin/about.php:132
+#: wp-admin/about.php:157
 msgid "WordPress 6.0 includes five new template options: author, date, categories, tag, and taxonomy. These additional templates provide greater flexibility for content creators. Tailor each with the tools you already know or with the following new options in this release."
 msgstr "WordPress 6.0 innehåller fem nya mallalternativ: författare, datum, kategorier, etikett och taxonomi. Dessa ytterligare mallar ger ökad flexibilitet åt innehållsskapare. Skräddarsy varje mall med de välbekanta verktygen eller med följande alternativ som är nya i denna utgåva."
 
-#: wp-admin/about.php:129
+#: wp-admin/about.php:154
 msgid "More Template Choices"
 msgstr "Fler mallval"
 
-#: wp-admin/about.php:115
+#: wp-admin/about.php:140
 msgid "Block themes now include the option to contain multiple style variations. This expands the new Style system even further and enables shortcuts to switch the look and feel of your site all within a single theme. You can change both the available settings, like the font weight, and the style options, like the default color palette. Change the look and feel of your site with just a few clicks."
 msgstr "Nu kan blockteman innehålla flera stilvarianter. Detta innebär fler möjligheter i det nya stilhanteringssystemet som gör att utseendet och känslan hos din webbplats enkelt kan ändras, utan byte av tema. Du kan ändra både de tillgängliga inställningarna, t.ex. typsnittets vikt, och stilalternativen, exempelvis standardfärgpaletten. Tack vare detta kan man ändra webbplatsens utseende med bara några klick."
 
-#: wp-admin/about.php:112
+#: wp-admin/about.php:137
 msgid "Style Switching"
 msgstr "Stilbyten"
 
-#: wp-admin/about.php:104
+#: wp-admin/about.php:129
 msgid "Make tag clouds and social icons even more appealing with updated settings and controls, and a new outline style for the tag cloud."
 msgstr "Gör etikettmoln och sociala ikoner ännu mer tilltalande med uppdaterade inställningar och reglage, och en ny konturstil för etikettmolnet."
 
-#: wp-admin/about.php:103
+#: wp-admin/about.php:128
 msgid "Create customized buttons and any new buttons you make will retain the style customizations automatically."
 msgstr "Skapa anpassade knappar – alla nya knappar du gör kommer automatiskt att behålla stilanpassningarna."
 
-#: wp-admin/about.php:102
+#: wp-admin/about.php:127
 msgid "Keep existing styles when you transform some blocks from one kind to another—from a Paragraph block to a Code block, for instance."
 msgstr "Behåll befintliga stilar när du omvandlar vissa block från en typ till en annan – exempelvis från ett textstycke till ett kodblock."
 
-#: wp-admin/about.php:101
+#: wp-admin/about.php:126
 msgid "Type two open brackets <code>[[</code> to quickly access the link menu."
 msgstr "Skriv två vänsterhakparenteser <code>[[</code> för att snabbt komma åt länkmenyn."
 
-#: wp-admin/about.php:100
+#: wp-admin/about.php:125
 msgid "Select text across multiple blocks and edit it all at once."
 msgstr "Markera text som sträcker sig över flera block och redigera hela texten samtidigt."
 
-#: wp-admin/about.php:97
+#: wp-admin/about.php:122
 msgid "Writing improvements abound, whether you&#8217;re writing a brand new post or adding elements to an existing page. Explore more ways to streamline your content creation process, including:"
 msgstr "En lång rad förbättringar för när du skriver, oavsett om du skriver ett helt nytt inlägg eller lägger till element på en befintlig sida. Utforska fler sätt att effektivisera processen för innehållsskapande, bland annat:"
 
-#: wp-admin/about.php:94
+#: wp-admin/about.php:119
 msgid "Enhanced Writing Experience"
 msgstr "Förbättrad skrivupplevelse"
 
-#: wp-admin/about.php:83
+#: wp-admin/about.php:108
 msgid "WordPress 6.0 includes more than 500 enhancements and 400 bug fixes. This page highlights several key advancements aimed at making your WordPress content-creating and site-building experience more feature-rich and intuitive. You will also find resources for developers and anyone wanting a deeper understanding of WordPress."
 msgstr "WordPress 6.0 innehåller mer än 500 förbättringar och korrigeringar av 400 programfel. Denna sida belyser flera viktiga framsteg som syftar till att göra ditt WordPress-arbete med att skapa innehåll och bygga webbplatser mer funktionsrikt och intuitivt. Du hittar också resurser för utvecklare och alla som vill ha en djupare förståelse för WordPress."
 
@@ -1156,7 +1156,7 @@ msgstr "Lägg till nytt applikationslösenord"
 msgid "Required to create an Application Password, but not to update the user."
 msgstr "Krävs för att skapa ett applikationslösenord men inte för att uppdatera användaren."
 
-#: wp-admin/about.php:361
+#: wp-admin/about.php:386
 msgid "Go to Updates"
 msgstr "Gå till uppdateringar"
 
@@ -4512,8 +4512,9 @@ msgctxt "plugin"
 msgid "Cannot Install"
 msgstr "Går inte att installera"
 
+#. translators: %s: WordPress version
 #. translators: %s: WordPress version.
-#: wp-admin/about.php:62 wp-admin/about.php:347
+#: wp-admin/about.php:62 wp-admin/about.php:87 wp-admin/about.php:372
 #: wp-admin/includes/update.php:302 wp-admin/index.php:119
 #: wp-admin/install.php:238 wp-admin/update-core.php:94 wp-admin/upgrade.php:80
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
@@ -5163,7 +5164,7 @@ msgstr "Förväntade data i svarsmatris från exportören: %s."
 #. translators: %s: Exporter friendly name.
 #: wp-admin/includes/ajax-actions.php:4949
 msgid "Expected response as an array from exporter: %s."
-msgstr "Förväntade svar i en matris från exportören: %s."
+msgstr "Förväntat svar i form av en array från exportören: %s."
 
 #. translators: %s: Exporter friendly name.
 #: wp-admin/includes/ajax-actions.php:4935
@@ -6890,7 +6891,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Just nu satt till: %s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:385
+#: wp-admin/about.php:410
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Version %s</strong> åtgärdar ett säkerhetsproblem."
 
@@ -6902,15 +6903,15 @@ msgstr "https://sv.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Profilbild"
 
-#: wp-admin/about.php:42 wp-admin/about.php:382
+#: wp-admin/about.php:42 wp-admin/about.php:407
 msgid "Maintenance and Security Releases"
 msgstr "Underhålls- och säkerhetsutgåvor"
 
-#: wp-admin/about.php:379
+#: wp-admin/about.php:404
 msgid "Security Releases"
 msgstr "Säkerhetsutgåvor"
 
-#: wp-admin/about.php:376
+#: wp-admin/about.php:401
 msgid "Maintenance Releases"
 msgstr "Underhållsutgåvor"
 
@@ -10229,15 +10230,18 @@ msgstr "Ange e-postadressen till en befintlig användare i det här nätverket f
 msgid "Show Toolbar when viewing site"
 msgstr "Visa verktygsfält när du är på webbplatsen"
 
+#. translators: %s: HelpHub URL
 #. translators: %s: HelpHub URL.
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:59 wp-admin/about.php:408
+#: wp-admin/about.php:59 wp-admin/about.php:84 wp-admin/about.php:433
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Läs mer i <a href=\"%s\">uppgifterna om utgåvan</a>."
 
+#. translators: 1: WordPress version number, 2: plural number of bugs. More
+#. than one security issue.
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:402
+#: wp-admin/about.php:47 wp-admin/about.php:427
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> åtgärdar några sårbarheter och rättar %2$s fel."
@@ -10245,33 +10249,33 @@ msgstr[1] "<strong>Version %1$s</strong> åtgärdar några sårbarheter och rät
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:396
+#: wp-admin/about.php:421
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> åtgärdar en säkerhetsrisk och rättar %2$s fel."
 msgstr[1] "<strong>Version %1$s</strong> åtgärdar en säkerhetsrisk och rättar %2$s fel."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:47 wp-admin/about.php:390
+#: wp-admin/about.php:72 wp-admin/about.php:415
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> åtgärdar %2$s fel."
 msgstr[1] "<strong>Version %1$s</strong> åtgärdar %2$s fel."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:387
+#: wp-admin/about.php:412
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>Version %s</strong> åtgärdar några säkerhetsproblem."
 
-#: wp-admin/about.php:381
+#: wp-admin/about.php:406
 msgid "Maintenance and Security Release"
 msgstr "Underhålls- och säkerhetsutgåva"
 
-#: wp-admin/about.php:378
+#: wp-admin/about.php:403
 msgid "Security Release"
 msgstr "Säkerhetsutgåva"
 
-#: wp-admin/about.php:375
+#: wp-admin/about.php:400
 msgid "Maintenance Release"
 msgstr "Underhållsutgåva"
 
@@ -10557,15 +10561,15 @@ msgid "Because this is a multisite installation, you may add accounts that alrea
 msgstr "Eftersom detta är en nätverksinstallation av WordPress kan du lägga till konton som redan finns på nätverket genom att ange ett användarnamn eller en e-postadress och ange en roll. För fler alternativ, som till exempel att ange ett lösenord, måste du vara en nätverksadministratör och använda åtgärdslänken ”Redigera” under en befintlig användares namn för att redigera användarprofilen på sidan Nätverksadministration > Alla användare."
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:77
+#: wp-admin/about.php:102
 msgid "Welcome to WordPress %s"
 msgstr "Välkommen till WordPress %s."
 
-#: wp-admin/about.php:364
+#: wp-admin/about.php:389
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Gå till Adminpanel &rarr; Hem"
 
-#: wp-admin/about.php:361
+#: wp-admin/about.php:386
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "Gå till adminpanel &rarr; Uppdateringar"
 
@@ -12336,7 +12340,7 @@ msgstr "Uppdateringar för WordPress"
 msgid "Edit menu item"
 msgstr "Redigera menyval"
 
-#: wp-admin/about.php:364 wp-admin/includes/network.php:148
+#: wp-admin/about.php:389 wp-admin/includes/network.php:148
 msgid "Go to Dashboard"
 msgstr "Gå till adminpanelen"
 
@@ -14307,7 +14311,7 @@ msgstr "Lägg till mediafiler från din dator"
 #: wp-admin/includes/media.php:1713 wp-admin/includes/media.php:2983
 #: wp-admin/includes/media.php:2989
 msgid "Insert into Post"
-msgstr "Infoga i innehåll"
+msgstr "Infoga i inlägg"
 
 #: wp-admin/includes/media.php:1687
 msgid "Upload date:"

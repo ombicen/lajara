@@ -4,6 +4,7 @@ import { fetchAPI } from '../lib/api'
 import Hero from '../components/Hero/index'
 import LogoDisplay from '../components/logoDisplay/index'
 import LandingAbout from '../components/landingAbout'
+import Properties from '../components/Properties'
 export default function Index({ homePost }) {
   // console.log(homePost)
 
@@ -14,9 +15,10 @@ export default function Index({ homePost }) {
         <Hero data={homePost.pageBy.startsida_acf.bildspel}></Hero>
         <LogoDisplay data={homePost.pageBy.startsida_acf.samarbetspartner}></LogoDisplay>
         <LandingAbout data={homePost.pageBy.startsida_acf.inlaggSammanfattning} />
-        {/* <PostExcerpt data={homePost.pageBy.startsida_acf.inlaggSammanfattning}></PostExcerpt>
-      <Properties data={homePost.bostader}></Properties>
-      <News data={homePost.posts}></News> */}
+        {/*  <PostExcerpt data={homePost.pageBy.startsida_acf.inlaggSammanfattning}></PostExcerpt>*/}
+        <Properties data={homePost.bostader}></Properties>
+        {/* <News data={homePost.posts}></News>*/}
+
       </Container>
     </>
   )
@@ -82,7 +84,6 @@ export const getStaticProps: GetStaticProps = async () => {
           }
         }
       }
-  
     }
     bostader {
       nodes {
@@ -91,6 +92,32 @@ export const getStaticProps: GetStaticProps = async () => {
           beskrivning {
             rubrik
             text
+          }
+          bildgalleri {
+            sourceUrl
+            title
+          }
+          bostader {
+            lghNr
+            planritning {
+              mediaItemUrl
+            }
+            rumKok
+            status
+            storlek
+            vaning
+          }
+          detaljer {
+            arkitekt
+            boarea
+            byggstart
+            inflyttning
+            rum
+            saljstart
+            vad
+            var {
+              city
+            }
           }
         }
       }

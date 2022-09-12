@@ -1,5 +1,5 @@
 
-import Footer from './footer'
+import Footer from './Footer/footer'
 import Navbar from './Navbar'
 
 
@@ -11,7 +11,7 @@ export default function Layout({ children }) {
       <div className="min-h-screen">
         <main>{children}</main>
       </div>
-      <Footer />
+      <Footer navItems={navItems} />
     </>
   )
 }
