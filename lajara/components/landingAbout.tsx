@@ -3,8 +3,6 @@ import Button from "@mui/material/Button";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 
 const LandingAbout = ({ data }) => {
-
-
   return (
     <div className="landing-about">
       <Grid

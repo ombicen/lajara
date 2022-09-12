@@ -1,27 +1,33 @@
-import { GetStaticProps } from 'next'
-import Container from '../components/container'
-import { fetchAPI } from '../lib/api'
-import Hero from '../components/Hero/index'
-import LogoDisplay from '../components/logoDisplay/index'
-import LandingAbout from '../components/landingAbout'
-import Properties from '../components/Properties'
+import { GetStaticProps } from "next";
+import Container from "../components/container";
+import { fetchAPI } from "../lib/api";
+import Hero from "../components/Hero/index";
+import LogoDisplay from "../components/logoDisplay/index";
+import LandingAbout from "../components/LandingAbout";
+import LandingAktuellt from "../components/LandingAktuellt";
+import Properties from "../components/Properties";
 export default function Index({ homePost }) {
   // console.log(homePost)
 
   return (
     <>
-
       <Container>
         <Hero data={homePost.pageBy.startsida_acf.bildspel}></Hero>
-        <LogoDisplay data={homePost.pageBy.startsida_acf.samarbetspartner}></LogoDisplay>
-        <LandingAbout data={homePost.pageBy.startsida_acf.inlaggSammanfattning} />
+        <LogoDisplay
+          data={homePost.pageBy.startsida_acf.samarbetspartner}
+        ></LogoDisplay>
+        <LandingAbout
+          data={homePost.pageBy.startsida_acf.inlaggSammanfattning}
+        />
+        <LandingAktuellt
+          data={homePost.pageBy.startsida_acf.inlaggSammanfattning}
+        />
         {/*  <PostExcerpt data={homePost.pageBy.startsida_acf.inlaggSammanfattning}></PostExcerpt>*/}
         <Properties data={homePost.bostader}></Properties>
         {/* <News data={homePost.posts}></News>*/}
-
       </Container>
     </>
-  )
+  );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -46,7 +52,7 @@ export const getStaticProps: GetStaticProps = async () => {
       width
     }
   }
-  `)
+  `);
   const homePost = await fetchAPI(` {
     pageBy(uri: "/") {
       id
@@ -134,9 +140,9 @@ export const getStaticProps: GetStaticProps = async () => {
         title
       }
     }
-  }`)
+  }`);
   return {
     props: { homePost, menuItems },
     revalidate: 3600,
-  }
-}
+  };
+};
