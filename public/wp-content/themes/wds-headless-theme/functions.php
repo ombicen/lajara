@@ -64,3 +64,10 @@ function register_custom_logo_type() {
       ],
     ] );
 }
+
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
