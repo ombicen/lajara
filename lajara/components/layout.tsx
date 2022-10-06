@@ -4,14 +4,17 @@ import Navbar from './Navbar'
 
 
 export default function Layout({ children }) {
-  const { menuItems: navItems } = children.props;
+
+
+  const { menuItems: navItems, options } = children.props;
+  
   return (
     <>
       <Navbar navItems={navItems} />
       <div className="min-h-screen">
         <main>{children}</main>
       </div>
-      <Footer navItems={navItems} />
+      <Footer data={options} />
     </>
   )
 }

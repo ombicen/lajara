@@ -4,8 +4,10 @@ import {
     Container,
     Typography
 } from "@mui/material";
+
+
 const LogoDisplay = ({ data }) => {
-    console.log('Logodisplay', data);
+
     if (!data || data.length < 1)
         return (<Skeleton variant="rectangular" width={'100%'} height={'100px'} animation='wave' sx={{
             bgcolor: '#000'

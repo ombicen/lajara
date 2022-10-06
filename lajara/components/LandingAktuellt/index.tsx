@@ -3,7 +3,6 @@ import { Grid, Container } from "../../node_modules/@mui/material/index";
 import styles from "./landingAktuellt.module.css";
 
 const LandingAktuellt = ({ data }) => {
-  console.log("LandingAktuellt", data);
 
   return (
     <section className={styles.wrapper}>

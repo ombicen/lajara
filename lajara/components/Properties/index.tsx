@@ -3,7 +3,7 @@ import styles from './properties.module.css'
 import { Container, Grid, Box } from '@mui/material';
 
 const Properties = ({ data }) => {
-    console.log('data', data);
+    
 
     return (
         <div className={styles.section}>

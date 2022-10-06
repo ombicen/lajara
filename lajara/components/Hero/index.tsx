@@ -6,7 +6,6 @@ const Hero = ({ data }) => {
         return (
             <Skeleton variant="rectangular" width={'100%'} height={'calc(100vh - 164px)'} />
         );
-    console.log('d', data);
 
     return (
         <div className={styles.hero}>

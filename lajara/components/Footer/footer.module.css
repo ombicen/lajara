@@ -1,12 +1,14 @@
 .footer {
     background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.footer__list {
-    display: flex;
-    flex-flow: column;
+
+.footer-column ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.footer .footer-column ul li *{
+    color: white;
 }

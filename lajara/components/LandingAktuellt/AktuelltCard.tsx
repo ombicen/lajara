@@ -6,8 +6,7 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 
 const AktuelltCard = () => {
-  console.log("AktuelltCard");
-  console.log("AktuelltCard");
+
   return (
     <Card elevation={0}>
       <CardMedia

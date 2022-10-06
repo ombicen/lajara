@@ -11,7 +11,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Layout>
-
         <Component {...pageProps} />
       </Layout>
     </ThemeProvider>

@@ -2,7 +2,7 @@
 import Box from '@mui/material/Box';
 
 const LandingGrid = ({ data }) => {
-  console.log("LandingGrid", data);
+  // console.log("LandingGrid", data);
 
   return (
     <div className="landing-grid">

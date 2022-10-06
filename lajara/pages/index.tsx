@@ -6,8 +6,9 @@ import LogoDisplay from "../components/logoDisplay/index";
 import LandingAbout from "../components/LandingAbout";
 import LandingAktuellt from "../components/LandingAktuellt";
 import Properties from "../components/Properties";
+import Wordpress from "../util/Wordpress";
+
 export default function Index({ homePost }) {
-  // console.log(homePost)
 
   return (
     <>
@@ -31,6 +32,8 @@ export default function Index({ homePost }) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+
+
   const menuItems = await fetchAPI(`
   {
     menu(id: "dGVybToy") {
@@ -53,6 +56,9 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   }
   `);
+
+
+
   const homePost = await fetchAPI(` {
     pageBy(uri: "/") {
       id
@@ -141,8 +147,14 @@ export const getStaticProps: GetStaticProps = async () => {
       }
     }
   }`);
+
+
+
+  const options = await Wordpress.getOptions();
+
+  
   return {
-    props: { homePost, menuItems },
+    props: { homePost, menuItems, options },
     revalidate: 3600,
   };
 };

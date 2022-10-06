@@ -3,8 +3,7 @@ import { url } from 'inspector';
 import styles from './properties.module.css'
 
 const BostadCard = ({ data }) => {
-    console.log('bostad', data);
-    console.log('var', data.bostad_acf.detaljer.var);
+
     let byggstart = new Date(data.bostad_acf.detaljer.byggstart).getTime();
     let inflyttning = new Date(data.bostad_acf.detaljer.inflyttning).getTime();
     let status = (byggstart < new Date().getTime()) ? ((new Date().getTime() < inflyttning) ? "onsale" : "soldout") : "upcomming";
