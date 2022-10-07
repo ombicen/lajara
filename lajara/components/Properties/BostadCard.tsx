@@ -30,16 +30,30 @@ const BostadCard = ({ data }) => {
                 </Box>
             </div>
 
+            <div className={styles['property__card-content']}>
+                <Typography gutterBottom variant="h6" sx={{
+                    fontSize: '16px',
+                    fontWeight: 'bold',
+                    color: '#297E36',
+                    lineHeight: '0'
+                }}>
+                    {data.bostad_acf.detaljer.var.city}
+                </Typography>
+                <Typography gutterBottom variant="h5" sx={{
+                    fontSize: '32px',
+                    fontWeight: 'bold',
+                    color: 'black',
 
-            <Typography gutterBottom variant="h6" component="div">
-                {data.bostad_acf.detaljer.var.city}
-            </Typography>
-            <Typography gutterBottom variant="h5" component="div">
-                {data.bostad_acf.beskrivning.rubrik}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-                {data.bostad_acf.beskrivning.text}
-            </Typography>
+                }}>
+                    {data.bostad_acf.beskrivning.rubrik}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{
+                    maxHeight: '5ch',
+                    overflow: 'hidden'
+                }}>
+                    {data.bostad_acf.beskrivning.text}
+                </Typography>
+            </div>
         </Card >
     );
 }

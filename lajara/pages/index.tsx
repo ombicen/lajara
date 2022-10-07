@@ -75,6 +75,7 @@ export const getStaticProps: GetStaticProps = async () => {
           ... on Page {
             id
             title
+            slug
             content
             featuredImage {
               node {

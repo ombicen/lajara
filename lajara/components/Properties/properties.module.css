@@ -22,6 +22,10 @@
     font-family: Lora, 'Times New Roman', Times, serif;
 }
 
+.property__card-content {
+    padding: 35px;
+}
+
 .property__card-chip {
     position: relative;
     border-radius: 0;
