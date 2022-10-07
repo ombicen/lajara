@@ -3,9 +3,12 @@ import Button from "@mui/material/Button";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 
 const LandingAbout = ({ data }) => {
+<<<<<<< HEAD
 
   console.log('landing', data);
 
+=======
+>>>>>>> a665676f2cf0ce5beaaf601f1e6fe522ca19e623
   return (
     <Box sx={{
       padding: '100px 0',
