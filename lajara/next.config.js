@@ -2,9 +2,23 @@
 const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
+	webpack: (config, {isServer}) => {
+		config.module.rules.push({
+			test: /\.svg$/,
+			use: ["@svgr/webpack"]
+		});
+
+		return config;
+	},
 	compiler: {
 		styledComponents: true,
-	}
+	},
+	images: {
+		domains: [
+			'server03.blackpixel.se', 
+			'via.placeholder.com', 
+		],
+	},
 }
 
 module.exports = nextConfig

@@ -1,6 +1,9 @@
+import 'range-slider-input/dist/style.css';
 import '../styles/style.scss'
 import * as NextImage from "next/image";
+import { LayoutHandler } from "../src/utils/LayoutHandler"
 
+LayoutHandler.listen();
 
 const OriginalNextImage = NextImage.default;
 

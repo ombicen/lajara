@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@200;300;400;500&display=swap');
+
 :root {
 
     // Colors
-    --color-primary: #070F29;
-    --color-secondary: #CBEBAD;
+    --color-primary: #2E8F3D;
+    --color-secondary: #EBF4EC;
     
     --color-black: #000000;
     --color-white: #FFFFFF;
+    --color-light-gray: #efefef;
     
     --color-divider: #c0c0c0;
 
+
     // Fonts
-    --font-primary: 'Open Sans', sans-serif;
+    --font-primary: 'Poppins', sans-serif;
 
     // Spacers
     --margin-xs: 0.25rem;
@@ -20,20 +24,20 @@
     --margin-xl: 8rem;
 
     // Font sizes
-    --size-h1: 50px;
-    --size-h2: 46px;
+    --size-h1: 42px;
+    --size-h2: 36px;
     --size-h3: 27px;
     --size-h4: 22px;
-    --size-lead: 27px;
-    --size-body: 18px;
+    --size-lead: 20px;
+    --size-body: 16px;
     --size-body2: 14px;
 
     --size-mobile-h1: 38px;
-    --size-mobile-h2: 34px;
+    --size-mobile-h2: 28px;
     --size-mobile-h3: 27px;    
     --size-mobile-h4: 22px;
     --size-mobile-lead: 18px;
-    --size-mobile-body: 16px;
+    --size-mobile-body: 14px;
     --size-mobile-body2: 14px;
 
     // Container settings
@@ -53,6 +57,19 @@
     font-family: var(--font-primary);
     margin: unset;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
 }
 
 
@@ -125,6 +142,8 @@ body.mobile {
 /* === 1. Fonts and Types === */
 
 h1, .h1 {
+    @extend .font-lora;
+    font-weight: 100;
     font-size: var(--size-h1);
 
     .mobile & {
@@ -133,6 +152,8 @@ h1, .h1 {
 }
 
 h2, .h2 {
+    @extend .font-lora;
+    font-weight: 100;
     font-size: var(--size-h2);
 
     .mobile & {
@@ -141,6 +162,8 @@ h2, .h2 {
 }
 
 h3, .h3 {
+    @extend .font-lora;
+    font-weight: 100;
     font-size: var(--size-h3);
 
     .mobile & {
@@ -182,5 +205,70 @@ p, .body, .p, li {
 
     .mobile & {
         font-size: var(--size-mobile-lead);
+    }
+}
+
+.text {
+    & > * {
+        &:not(:last-child) {
+            margin-bottom: 1em;
+        }
+    }
+}
+
+
+.text {
+    & > * {
+        &:not(:last-child) {
+            margin-bottom: 1em;
+        }
+    }
+}
+
+
+/* === 2. Global UI element styles. === */
+
+.button, button {
+    
+    border: 2px solid transparent;
+    border-radius: 10em;
+
+    display: flex;
+    align-items: center;
+
+    padding: .75em 2em;
+
+    &.primary {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+
+    &.white {
+        background-color: var(--color-white);
+        color: var(--color-black);
+    }
+
+    &, &.black {
+        background-color: var(--color-black);
+        color: var(--color-white);
+    }
+
+    &.outline-white {
+        background-color: transparent;
+        color: var(--color-white);
+        border-color: var(--color-white);
+    }
+
+    &.outline-black {
+        background-color: transparent;
+        color: var(--color-black);
+        border-color: var(--color-black);
+    }
+
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        filter: brightness(1.2);
     }
 }

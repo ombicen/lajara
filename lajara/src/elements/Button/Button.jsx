@@ -7,10 +7,12 @@ import styled from 'styled-components'
  */
 const Button = ({ 
     children,
+    color = 'black',
+    ...rest
 }) => {
 
     return (
-        <Style>
+        <Style className={`${rest.className} ${color}`}>
             {children}
         </Style>
     )
@@ -26,6 +28,12 @@ Button.propTypes = {
      * The content of the button.
      */
     children: PropTypes.node.isRequired,
+
+
+    /**
+     * The color theme.
+     */
+    color: PropTypes.oneOf([ 'primary', 'black', 'white', 'outline-white', 'outline-black' ])
 }
 
 export { Button };

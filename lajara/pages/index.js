@@ -1,22 +1,54 @@
 import Head from "next/head";
 import styled from "styled-components";
+import Wordpress from '../util/Wordpress'
+import SEO from "util/SEO";
+import BlockRenderer from "theme/BlockRenderer";
+import loadAdditionalData from "util/loadAdditionalData";
 
-export default function Home() {
+export async function getStaticProps(context) { 
 
+	const page = await Wordpress.getPageBySlug('startsida');
+	const status = await Wordpress.getTaxonomi('status')
+
+	await loadAdditionalData(page?.acf?.blocks)
+
+	if (!page) {
+        return {
+            notFound: true,
+        }
+    }
+
+	let options = await Wordpress.getOptions()
+	let logo = await Wordpress.getLogo()
+	let menu = await Wordpress.getMenu()
+	
+	return {
+		props: { 
+			page,
+			options,
+			logo,
+			status,
+			menu
+		},
+		revalidate: 10
+	}
+}
+
+
+
+
+export default function Home({page, status}) {
 
 	return <>
+
 		<Head>
-			<title>Lajara Website</title>
+			{SEO.pageMeta(page)}
 		</Head>
 
-		<Style className="contained small">
-			<div className="spacer l"></div>
-			<h1>Lajara Website</h1>
-			<span>v 0.1.0</span>
-			<div className="spacer m"></div>
-			<p>This is a boilerplate project for Acrowd Next.js &amp; Wordpress projects. To get started edit the <span>index.js</span> page and take a look at the README file.</p>
-
-			<div className="spacer m"></div>
+		<Style className="main">
+	
+			
+			<BlockRenderer blocks={page?.acf?.blocks} status = {status} />
 
 
 		</Style>

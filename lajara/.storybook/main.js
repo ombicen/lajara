@@ -1,35 +1,39 @@
-
 const path = require('path');
 
-// Export a function. Accept the base config as the only param.
 module.exports = {
-  "stories": [
-    "../**/*.stories.mdx",
-    "../**/*.stories.@(js|jsx|ts|tsx)"
+  stories: ['../**/**/*.stories.mdx', '../**/**/*.stories.@(js|jsx|ts|tsx)'],
+  staticDirs: ['../public'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+    'storybook-addon-next',
+    '@storybook/addon-a11y',
   ],
-  "addons": [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
-    "@storybook/preset-scss"
-  ],
-  // "framework": "@storybook/react",
-  // "core": {
-  //   "builder": "@storybook/builder-webpack5"
-  // },
-  // webpackFinal: async (config, { configType }) => {
-  //   // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
-  //   // You can change the configuration based on that.
-  //   // 'PRODUCTION' is used when building the static version of storybook.
+  framework: '@storybook/react',
+  core: {
+    builder: '@storybook/builder-webpack5',
+  },
+  webpackFinal: (config) => {
 
-  //   // Make whatever fine-grained changes you need
-  //   config.module.rules.push({
-  //     test: /\.scss$/,
-  //     use: ['style-loader', 'css-loader', 'sass-loader'],
-  //     include: path.resolve(__dirname, '../'),
-  //   });
+    const fileLoaderRule = config.module.rules.find(rule => rule.test && rule.test.test('.svg'));
+    fileLoaderRule.exclude = /\.svg$/;  
 
-  //   // Return the altered config
-  //   return config;
-  // },
+    config.module.rules.push({
+      test: /\.svg$/,
+      enforce: 'pre',
+      loader: require.resolve('@svgr/webpack'),
+    });
+
+    
+    config.resolve.alias = {
+      ...config.resolve?.alias,
+      '@': [path.resolve(__dirname, '../**/'), path.resolve(__dirname, '../')],
+    };
+    config.resolve.roots = [
+      path.resolve(__dirname, '../public'),
+      'node_modules',
+    ];
+    return config;
+  },
 };

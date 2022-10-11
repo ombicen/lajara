@@ -18,5 +18,12 @@ const Template = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    children: 'Click me',
+    children: 'Hitta bostad',
+    color: 'primary'
+};
+
+export const Outlined = Template.bind({});
+Outlined.args = {
+    children: 'Mer om Lajara',
+    color: 'outline-black'
 };
