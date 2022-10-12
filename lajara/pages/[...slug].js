@@ -9,22 +9,22 @@ import loadAdditionalData from 'util/loadAdditionalData';
 
 export async function getStaticProps(context) {
 
-	const page = await Wordpress.getPageBySlug(context.params.slug)
-	const status = await Wordpress.getTaxonomi('status')
-	const options = await Wordpress.getOptions()
-	const logo = await Wordpress.getLogo()
-	const menu = await Wordpress.getMenu()
+	const page = await Wordpress.getPageBySlug(context.params.slug) ?? null;
+	const status = await Wordpress.getTaxonomi('status') ?? null;
+	const options = await Wordpress.getOptions() ?? null;
+	const logo = await Wordpress.getLogo() ?? null;
+	const menu = await Wordpress.getMenu() ?? null;
 
 	if (!page) {
-        return {
-            notFound: true,
-        }
-    }
+		return {
+			notFound: true,
+		}
+	}
 
 	await loadAdditionalData(page?.acf?.blocks)
 
 	return {
-		props: { 
+		props: {
 			page,
 			status,
 			options,
@@ -38,31 +38,31 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths(context) {
 
-    const pages = await Wordpress.getPages();
+	const pages = await Wordpress.getPages();
 
-	let paths = pages.map(p => `${localLink(p.link)}`).filter(l => 
+	let paths = pages.map(p => `${localLink(p.link)}`).filter(l =>
 		l != '' &&
 		l != '/bostader' &&
-        l != '/aktuellt'
+		l != '/aktuellt'
 	);
-    
-    return {
-        paths,
-        fallback: 'blocking'
-    }
+
+	return {
+		paths,
+		fallback: 'blocking'
+	}
 }
 
-export default function Page({page, status}) {
-	
+export default function Page({ page, status }) {
+
 	return (
 		<>
 
-            <Head>
-                {SEO.pageMeta(page)}
-            </Head>
+			<Head>
+				{SEO.pageMeta(page)}
+			</Head>
 
-			<BlockRenderer blocks={page?.acf?.blocks} status = {status} />
-			
+			<BlockRenderer blocks={page?.acf?.blocks} status={status} />
+
 		</>
 	)
 }

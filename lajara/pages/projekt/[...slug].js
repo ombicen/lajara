@@ -5,33 +5,33 @@ import Wordpress from 'util/Wordpress';
 
 export async function getStaticProps(context) {
 
-    const project = await Wordpress.getProjectBySlug(context.params.slug);
-    const menu = await Wordpress.getMenu()
-
-    if (project == undefined) {
+    const project = await Wordpress.getProjectBySlug(context.params.slug) ?? null;
+    const menu = await Wordpress.getMenu() ?? null
+    const options = await Wordpress.getOptions() ?? null
+    console.log(options);
+    if (project == null) {
         return {
             notFound: true,
         }
     }
 
-    const options = await Wordpress.getOptions()
 
-	return {
+    return {
 
-		props: { 
+        props: {
             project,
             options,
             menu
-		},
+        },
         revalidate: 10
-	}
+    }
 }
 
 export async function getStaticPaths(context) {
 
-    const projects = await Wordpress.getProjects({limit : 50});
+    const projects = await Wordpress.getProjects({ limit: 50 });
 
-    
+
     return {
         // paths: producers.filter((_,i) => i <= 10).map(p => `/producenter/${p.slug}`),
         paths: projects?.map(p => `/projekt/${p.slug}`),
@@ -88,7 +88,7 @@ export default function ProjectRoute({ project, options }) {
         description: project.acf.description,
 
         residences: project.acf.residences,
-        
+
         location: project.acf.details.location,
 
     }} />

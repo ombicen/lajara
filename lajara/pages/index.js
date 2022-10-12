@@ -5,25 +5,25 @@ import SEO from "util/SEO";
 import BlockRenderer from "theme/BlockRenderer";
 import loadAdditionalData from "util/loadAdditionalData";
 
-export async function getStaticProps(context) { 
+export async function getStaticProps(context) {
 
-	const page = await Wordpress.getPageBySlug('startsida');
-	const status = await Wordpress.getTaxonomi('status')
+	const page = await Wordpress.getPageBySlug('startsida') ?? null;
+	const status = await Wordpress.getTaxonomi('status') ?? null
 
 	await loadAdditionalData(page?.acf?.blocks)
 
 	if (!page) {
-        return {
-            notFound: true,
-        }
-    }
+		return {
+			notFound: true,
+		}
+	}
 
-	let options = await Wordpress.getOptions()
-	let logo = await Wordpress.getLogo()
-	let menu = await Wordpress.getMenu()
-	
+	let options = await Wordpress.getOptions() ?? null
+	let logo = await Wordpress.getLogo() ?? null
+	let menu = await Wordpress.getMenu() ?? null
+	console.log('options', options);
 	return {
-		props: { 
+		props: {
 			page,
 			options,
 			logo,
@@ -37,7 +37,7 @@ export async function getStaticProps(context) {
 
 
 
-export default function Home({page, status}) {
+export default function Home({ page, status }) {
 
 	return <>
 
@@ -46,9 +46,9 @@ export default function Home({page, status}) {
 		</Head>
 
 		<Style className="main">
-	
-			
-			<BlockRenderer blocks={page?.acf?.blocks} status = {status} />
+
+
+			<BlockRenderer blocks={page?.acf?.blocks} status={status} />
 
 
 		</Style>

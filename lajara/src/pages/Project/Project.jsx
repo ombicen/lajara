@@ -23,7 +23,7 @@ const Project = ({ data, project, options }) => {
 
         </Head>
 
-        <ProjectHero 
+        <ProjectHero
             image={data.heroImage}
             title={data.title}
         >
@@ -42,15 +42,15 @@ const Project = ({ data, project, options }) => {
             gallery={data.gallery}
         />
 
-        <ResidencesTable 
+        <ResidencesTable
             residences={data.residences}
         />
 
-        <Map 
+        <Map
             location={data.location}
         />
 
-        <BlockRenderer blocks={options.blocks} />
+        <BlockRenderer blocks={options?.blocks} />
 
     </>
 }

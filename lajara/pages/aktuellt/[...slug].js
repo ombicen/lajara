@@ -4,10 +4,10 @@ import Wordpress from 'util/Wordpress';
 
 export async function getStaticProps(context) {
 
-    const post = await Wordpress.getPostBySlug(context.params.slug);
-    const options = await Wordpress.getOptions()
-    const logo = await Wordpress.getLogo()
-    const menu = await Wordpress.getMenu()
+    const post = await Wordpress.getPostBySlug(context.params.slug) ?? null;
+    const options = await Wordpress.getOptions() ?? null
+    const logo = await Wordpress.getLogo() ?? null
+    const menu = await Wordpress.getMenu() ?? null
 
 
 
@@ -17,16 +17,16 @@ export async function getStaticProps(context) {
         }
     }
 
-	return {
+    return {
 
-		props: { 
+        props: {
             post,
             options,
             logo,
             menu
-		},
+        },
         revalidate: 10
-	}
+    }
 }
 
 export async function getStaticPaths(context) {
@@ -40,6 +40,6 @@ export async function getStaticPaths(context) {
 }
 
 
-export default function Post( props ) {
+export default function Post(props) {
     return <PostPage {...props} />
 }

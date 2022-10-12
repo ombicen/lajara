@@ -2,7 +2,7 @@
 const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
-	webpack: (config, {isServer}) => {
+	webpack: (config, { isServer }) => {
 		config.module.rules.push({
 			test: /\.svg$/,
 			use: ["@svgr/webpack"]
@@ -15,8 +15,8 @@ const nextConfig = {
 	},
 	images: {
 		domains: [
-			'server03.blackpixel.se', 
-			'via.placeholder.com', 
+			'lajara.se',
+			'via.placeholder.com',
 		],
 	},
 }

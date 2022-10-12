@@ -1,11 +1,12 @@
 {
   "name": "lajara",
   "version": "0.1.0",
+  "homepage": "https://lajara.se",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

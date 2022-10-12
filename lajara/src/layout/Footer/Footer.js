@@ -8,33 +8,33 @@ import Image from 'next/image'
 import Socials from './Socials'
 
 
-export default function Footer({data, logo}) {
-
+export default function Footer({ data, logo }) {
+    console.log(data);
     let menus = data.footer.menus
 
 
     return (
-        <Style className = "footer">
+        <Style className="footer">
             <div className='contained'>
-                <div className = "nav">
+                <div className="nav">
                     {menus && menus.map((m) => (
                         <>
-                            <div className='footer-column' key = {JSON.stringify(m)}>
-                                {m.menu.title && 
-                                    <div className='h5' dangerouslySetInnerHTML={{__html: m.menu.title}}/>
+                            <div className='footer-column' key={JSON.stringify(m)}>
+                                {m.menu.title &&
+                                    <div className='h5' dangerouslySetInnerHTML={{ __html: m.menu.title }} />
                                 }
 
                                 <ul className='links'>
                                     {m.menu.links.map((l) => {
                                         if (l.link !== '') {
                                             return (
-                                                <Link key = {JSON.stringify(l)} href = {l.link}>
+                                                <Link key={JSON.stringify(l)} href={l.link}>
                                                     <a className='footer-item'>{l.text}</a>
                                                 </Link>
                                             )
                                         } else {
                                             return (
-                                                <p  key = {JSON.stringify(l)} className='footer-item'>{l.text}</p>
+                                                <p key={JSON.stringify(l)} className='footer-item'>{l.text}</p>
                                             )
                                         }
                                     })}
@@ -42,25 +42,25 @@ export default function Footer({data, logo}) {
                             </div>
                         </>
                     ))}
-                    <Newsletter data = {data} />
+                    <Newsletter data={data} />
                 </div>
-                <Divider color = {'#1F1F1F'} />
+                <Divider color={'#1F1F1F'} />
                 <div className='low-footer'>
                     <div className='logo'>
-                        <Image 
-                            src = {logo && logo}
-                            width = {150}
-                            height = {50}
-                            priority = {false}
-                            loader = {loadImage}
-                            objectFit = {'contain'}
+                        <Image
+                            src={logo && logo}
+                            width={150}
+                            height={50}
+                            priority={false}
+                            loader={loadImage}
+                            objectFit={'contain'}
                         />
                     </div>
                     <div className='low-footer-navigation'>
                         <div className='container'>
                             {data?.terms_and_conditions?.map((l) => {
                                 return (
-                                    <Link key = {JSON.stringify(l)} href = {l.link}>
+                                    <Link key={JSON.stringify(l)} href={l.link}>
                                         <a className='term'>
                                             {l.label}
                                         </a>
@@ -69,7 +69,7 @@ export default function Footer({data, logo}) {
                             })}
                         </div>
                     </div>
-                    <Socials socials = {data.socials} />
+                    <Socials socials={data.socials} />
                 </div>
             </div>
         </Style>
