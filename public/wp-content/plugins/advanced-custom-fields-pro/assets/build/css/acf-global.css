@@ -1,6 +1,4 @@
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/advanced-custom-fields-pro/assets/src/sass/acf-global.scss ***!
-  \*****************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
 /*--------------------------------------------------------------------------------------------
 *
 *	Vars
@@ -338,89 +336,89 @@
 }
 
 .acf-icon.-plus:before {
-  content: "\f543";
+  content: "";
 }
 
 .acf-icon.-minus:before {
-  content: "\f460";
+  content: "";
 }
 
 .acf-icon.-cancel:before {
-  content: "\f335";
+  content: "";
 }
 
 .acf-icon.-pencil:before {
-  content: "\f464";
+  content: "";
 }
 
 .acf-icon.-location:before {
-  content: "\f230";
+  content: "";
 }
 
 .acf-icon.-up:before {
-  content: "\f343";
+  content: "";
   margin-top: -0.1em;
 }
 
 .acf-icon.-down:before {
-  content: "\f347";
+  content: "";
   margin-top: 0.1em;
 }
 
 .acf-icon.-left:before {
-  content: "\f341";
+  content: "";
   margin-left: -0.1em;
 }
 
 .acf-icon.-right:before {
-  content: "\f345";
+  content: "";
   margin-left: 0.1em;
 }
 
 .acf-icon.-sync:before {
-  content: "\f463";
+  content: "";
 }
 
 .acf-icon.-globe:before {
-  content: "\f319";
+  content: "";
   margin-top: 0.1em;
   margin-left: 0.1em;
 }
 
 .acf-icon.-picture:before {
-  content: "\f128";
+  content: "";
 }
 
 .acf-icon.-check:before {
-  content: "\f147";
+  content: "";
   margin-left: -0.1em;
 }
 
 .acf-icon.-dot-3:before {
-  content: "\f533";
+  content: "";
   margin-top: -0.1em;
 }
 
 .acf-icon.-arrow-combo:before {
-  content: "\f156";
+  content: "";
 }
 
 .acf-icon.-arrow-up:before {
-  content: "\f142";
+  content: "";
   margin-left: -0.1em;
 }
 
 .acf-icon.-arrow-down:before {
-  content: "\f140";
+  content: "";
   margin-left: -0.1em;
 }
 
 .acf-icon.-search:before {
-  content: "\f179";
+  content: "";
 }
 
 .acf-icon.-link-ext:before {
-  content: "\f504";
+  content: "";
 }
 
 .acf-icon.-duplicate {
@@ -445,12 +443,12 @@
 }
 
 .acf-icon.-collapse:before {
-  content: "\f142";
+  content: "";
   margin-left: -0.1em;
 }
 
 .-collapsed .acf-icon.-collapse:before {
-  content: "\f140";
+  content: "";
   margin-left: -0.1em;
 }
 
@@ -1662,5 +1660,3 @@ html[dir=rtl] .acf-table > tbody > tr > td.order + td {
     background-size: 20px 20px;
   }
 }
-
-/*# sourceMappingURL=acf-global.css.map*/

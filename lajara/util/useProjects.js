@@ -4,8 +4,6 @@ import { useQueryParams } from "./Utils";
 
 export default function useProjects({args = {}, limit = 4} = {}) {
 
-
-    console.log(limit)
     const [page, setPage] = useState(1)
     const [pages, setPages] = useState(0)
     const [loading, setLoading] = useState(false)

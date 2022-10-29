@@ -2,6 +2,6 @@
 public/wp-includes/
 public/wp-admin/
 public/*.php
-
+sql/*
 #not wp content
 !public/wp-content/*.php

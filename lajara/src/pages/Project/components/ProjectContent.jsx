@@ -2,46 +2,59 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Image from 'next/image'
-import FsLightbox from 'fslightbox-react';
+import Fancybox from "./FancyBox";
 
 const ProjectContent = ({ html, gallery }) => {
 
-    const [toggler, setToggler] = useState(false);
 
     return (
         <Style>
             <div className="contained">
-                <div className="text" dangerouslySetInnerHTML={{__html: html}} />
+                <div className="text" dangerouslySetInnerHTML={{ __html: html }} />
 
                 <div className="images">
-                    {gallery?.filter((_,index) => index < 4).map((image, index) => (
-                        
-                        <div className="image" key={JSON.stringify(image)} onClick={ () => setToggler(!toggler) }>
-                            <Image 
-                                src={image.src}
-                                alt={image.alt}
-                                width={500}
-                                height={500}
-                                objectFit={'cover'}
-                            />
+                    <Fancybox options={{ autoplay: true }}>
+                        {gallery?.map((image, index) => (
+                            <>
+                                {index < 4 ? (
+                                    <div className={"image"} data-fancybox="gallery" data-src={image.src} key={JSON.stringify(image)} >
+                                        <Image
+                                            src={image.src}
+                                            alt={image.alt}
+                                            width={500}
+                                            height={500}
+                                            objectFit={'cover'}
+                                            layout={'fill'}
+                                        />
 
-                            {(index == 3 && gallery.length > 4) && <div className="view-more">
-                                <span className="number">{gallery.length - 4}</span>
-                                <div>fler</div>
-                                <div className="arrow"></div>
-                            </div>}
+                                        {(index == 3 && gallery.length > 4) && <div className="view-more">
+                                            <span className="number">{gallery.length - 4}</span>
+                                            <div>fler</div>
+                                            <div className="arrow"></div>
+                                        </div>}
+                                    </div>
 
-                        </div>
-                    ))}
+                                ) : (<div className={"image hidden"} data-fancybox="gallery" data-src={image.src} key={JSON.stringify(image)}>
+                                    <Image
+                                        src={image.src}
+                                        alt={image.alt}
+                                        width={500}
+                                        height={500}
+                                        objectFit={'cover'}
+                                        layout={'fill'}
+                                        loading={'eager'}
+                                    /></div>)}
+                            </>
+
+                        ))}
+
+                    </Fancybox>
                 </div>
-            </div>
+            </div >
 
-            {gallery && <FsLightbox 
-                toggler={ toggler }
-                sources={ gallery.map(image => image.src) }
-            />}
 
-        </Style>
+
+        </Style >
     )
 }
 
@@ -51,7 +64,7 @@ const Style = styled.section`
     padding-bottom: 10rem;
 
     .text {
-        max-width: 700px;
+       
     }
 
     .images {
@@ -65,11 +78,13 @@ const Style = styled.section`
 
 
         .image {
-            display: block !important;
+            display: block;
             position: relative;
             min-width: 0;
             min-height: 0;
-
+            &.hidden{
+                display:none;
+            }
             & > span {
                 display: block !important;
                 width: 100% !important;
@@ -148,8 +163,10 @@ const Style = styled.section`
             aspect-ratio: 10 / 8;
 
             .image {
-                display: block !important;
-
+                display: block;
+                &.hidden{
+                    display:none;
+                }
                 &:nth-child(1) {
                     grid-column: 1 / span 3;
                     grid-row: 1 / span 2;

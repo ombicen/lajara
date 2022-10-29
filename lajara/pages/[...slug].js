@@ -61,7 +61,7 @@ export default function Page({ page, status }) {
 				{SEO.pageMeta(page)}
 			</Head>
 
-			<BlockRenderer blocks={page?.acf?.blocks} status={status} />
+			<BlockRenderer page={page} blocks={page?.acf?.blocks} status={status} />
 
 		</>
 	)

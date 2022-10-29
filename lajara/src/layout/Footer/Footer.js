@@ -9,7 +9,7 @@ import Socials from './Socials'
 
 
 export default function Footer({ data, logo }) {
-    console.log(data);
+
     let menus = data.footer.menus
 
 

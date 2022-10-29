@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { useWindowSize } from 'src/utils/LayoutHandler'
-import Image from 'next/image'
 
+import Carousel from './Carousel'
+import Item from './Item'
 const Timeline = ({ html, items }) => {
 
 
@@ -19,50 +19,35 @@ const Timeline = ({ html, items }) => {
 
         setPadding(leftPadding + leftPosition)
     }, [ref, w, h])
-    
+
 
 
     return (
         <Style id="process">
             <div ref={ref} className="contained">
-                {html && <div className="text" dangerouslySetInnerHTML={{__html: html}} />}
+                {html && <div className="text" dangerouslySetInnerHTML={{ __html: html }} />}
             </div>
 
-            <div className="scrollable" style={{paddingLeft: `${padding}px`}}>
-
-                <div className="container">
 
 
+            <div className="container">
+
+                <Carousel options={{ infinite: false, fill: false, center: false, Dots: false, Navigation: false, slidesPerPage: 1 }} >
                     {items?.map(item => (
-                        <div className="item" key={JSON.stringify(item)}>
-                            
-                            <div className="top">
-                                {item.image?.src && <Image 
-                                    src={item.image.src}
-                                    alt={item.image.alt}
-                                    width={200}
-                                    height={200}
-                                    objectFit={'contain'}
-                                />}
-
-                                <div className="line"></div>
-                            </div>
-
-                            <div className="content" dangerouslySetInnerHTML={{__html: item.content}} />
-                            
-                        </div>
+                        <Item data={item} key={JSON.stringify(item)} />
                     ))}
+                </Carousel>
 
 
 
-                    <div className="spacer wxl"></div>
-
-                </div>
-
+                <div className="spacer wxl"></div>
             </div>
 
-            
-            
+
+
+
+
+
         </Style>
     )
 }
@@ -70,74 +55,25 @@ const Timeline = ({ html, items }) => {
 const Style = styled.section`
     padding-top: 6rem;
     padding-bottom: 6rem;
-
+    width:100%;
+    overflow:hidden;
     .text {
         max-width: 800px;
-    }
-
-    .scrollable {
-        overflow-x: auto;
-        padding-right: 10rem;
-        margin-top: 4rem;
-
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-        &::-webkit-scrollbar {
-            display: none;
-        }
-        
+    }    
         .container {
             display: flex;
-            padding-right: 10rem;
-
+            width: calc(100% - (var(--padding-side)*2));
+            margin-top:60px;
+            .carousel__viewport{
+                padding-left:calc(((100vw - var(--contained-width-standard)) / 2) - 30px);
+            }
             .spacer {
                 flex-shrink: 0;
             }
 
-            .item {
-                flex-shrink: 0;
-                width: 24rem;
-
-                &:nth-last-child(-n+2) {
-                    .top {
-                        .line {
-                            display: none !important;
-                        }
-                    }
-                }
-
-                .top {
-
-                    display: flex;
-                    align-items: center;
-                    margin-right: 1rem;
-
-                    & > span {
-                        width: 8rem !important;
-                        height: 8rem !important;
-                    }
-
-                    .line {
-                        flex-grow: 1;
-                        height: 1px;
-                        background-color: var(--color-primary);
-                    }
-                }
-
-                .content {
-                    font-size: 14px;
-                    margin-top: 2rem;
-                    width: 80%;
-
-                    h2, h3 {
-                        font-size: 22px;
-                        color: var(--color-primary);
-                        margin-bottom: 1rem;
-                    }
-                }
-            }
+           
         }
-    }
+    
 `
 
 Timeline.propTypes = {

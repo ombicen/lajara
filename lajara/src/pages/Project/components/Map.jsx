@@ -4,8 +4,8 @@ import { GoogleMap, LoadScript, Marker, Rectangle } from '@react-google-maps/api
 import { useDevices } from 'src/utils/LayoutHandler';
 
 
-const Map = ({ location }) => {
-
+const Map = ({ location, mapstyle }) => {
+    const mapStyles = mapstyle ? mapstyle : MAP_STYLES;
     const [mobile, tablet, desktop] = useDevices()
 
     const [map, setMap] = useState()
@@ -31,7 +31,7 @@ const Map = ({ location }) => {
                 <GoogleMap
                     mapContainerStyle={{
                         width: '100%',
-                        height: (mobile || tablet) ? '60vh' : '30rem'
+                        height: (mobile || tablet) ? '60vh' : '100%'
                     }}
                     onLoad={map => {
                         setMap(map);
@@ -40,7 +40,7 @@ const Map = ({ location }) => {
                         streetViewControl: false,
                         fullscreenControl: true,
                         mapTypeControl: false,
-                        styles: MAP_STYLES
+                        styles: mapStyles
                     }}
                 >
                     <Marker
@@ -49,7 +49,7 @@ const Map = ({ location }) => {
                             lng: location.lng,
                         }}
                     />
-                    <Marker 
+                    <Marker
                         position={{
                             lat: location.lat,
                             lng: location.lng

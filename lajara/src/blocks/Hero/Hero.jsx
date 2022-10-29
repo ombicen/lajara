@@ -13,6 +13,7 @@ const Hero = ({ image, content, buttons }) => {
                 src={image.src}
                 alt={image.alt}
                 objectFit={'cover'}
+                priority={true}
             />}
 
             <div className="contained extra-small">

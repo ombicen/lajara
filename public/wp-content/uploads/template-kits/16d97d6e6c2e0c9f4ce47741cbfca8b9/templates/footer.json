@@ -1,0 +1,436 @@
+{
+    "version": "0.4",
+    "title": "Footer",
+    "type": "section",
+    "metadata": {
+        "template_type": "section-footer",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "elementor_header_footer"
+    },
+    "content": [
+        {
+            "id": "566d766f",
+            "settings": {
+                "height": "min-height",
+                "custom_height": {
+                    "unit": "px",
+                    "size": 300,
+                    "sizes": []
+                },
+                "structure": "30",
+                "background_background": "classic",
+                "padding": {
+                    "unit": "em",
+                    "top": "0",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": false
+                },
+                "__globals__": {
+                    "background_color": "globals\/colors?id=bff39c7"
+                }
+            },
+            "elements": [
+                {
+                    "id": "1a3e2f0d",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 50.262,
+                        "space_between_widgets": 10,
+                        "_inline_size_tablet": 100,
+                        "margin": {
+                            "unit": "em",
+                            "top": "-1",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "70fb0bd2",
+                            "settings": {
+                                "image": {
+                                    "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/logo.png",
+                                    "id": 532
+                                },
+                                "align": "left",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 35,
+                                    "sizes": []
+                                },
+                                "height": {
+                                    "unit": "px",
+                                    "size": 60,
+                                    "sizes": []
+                                },
+                                "object-fit": "cover"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "image",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "27909004",
+                            "settings": {
+                                "editor": "<p>Nunc a purus sit amet nulla porttitor auctor vitae eu purus. Suspendisse non bibendum lectus. Mauris ut dignissim arcu, vel euismod mi. Pellentesque ut velit dictum, dignissim dui non, pulvinar lectus. Etiam non mi vestibulum, aliquam lacus mattis.<\/p>"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                },
+                {
+                    "id": "7a4640a4",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 20.34,
+                        "content_position": "top",
+                        "padding": {
+                            "unit": "em",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        },
+                        "_inline_size_tablet": 50,
+                        "_inline_size_mobile": 50
+                    },
+                    "elements": [
+                        {
+                            "id": "5f5c4d8",
+                            "settings": {
+                                "title": "Other Pages",
+                                "header_size": "h6",
+                                "__globals__": {
+                                    "title_color": "globals\/colors?id=primary"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "6f41a21d",
+                            "settings": {
+                                "icon_list": [
+                                    {
+                                        "text": "Privacy Policy",
+                                        "selected_icon": {
+                                            "value": "icon icon-plus",
+                                            "library": "ekiticons"
+                                        },
+                                        "_id": "39df2c1"
+                                    },
+                                    {
+                                        "text": "Term Of Service",
+                                        "selected_icon": {
+                                            "value": "icon icon-plus",
+                                            "library": "ekiticons"
+                                        },
+                                        "_id": "4af37f2"
+                                    },
+                                    {
+                                        "text": "Disclaimer",
+                                        "selected_icon": {
+                                            "value": "icon icon-plus",
+                                            "library": "ekiticons"
+                                        },
+                                        "_id": "27d026a"
+                                    },
+                                    {
+                                        "text": "Credit",
+                                        "selected_icon": {
+                                            "value": "icon icon-plus",
+                                            "library": "ekiticons"
+                                        },
+                                        "_id": "f60a2b3"
+                                    },
+                                    {
+                                        "text": "FAQ",
+                                        "selected_icon": {
+                                            "value": "icon icon-plus",
+                                            "library": "ekiticons"
+                                        },
+                                        "_id": "c2d7e2e"
+                                    }
+                                ],
+                                "space_between": {
+                                    "unit": "px",
+                                    "size": 7,
+                                    "sizes": []
+                                },
+                                "icon_size": {
+                                    "unit": "px",
+                                    "size": 10,
+                                    "sizes": []
+                                },
+                                "text_indent": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "__globals__": {
+                                    "text_color": "globals\/colors?id=text",
+                                    "text_color_hover": "globals\/colors?id=primary",
+                                    "icon_color": "globals\/colors?id=text",
+                                    "icon_color_hover": "globals\/colors?id=primary"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "icon-list",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                },
+                {
+                    "id": "7716feab",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 29.035,
+                        "padding": {
+                            "unit": "em",
+                            "top": "2",
+                            "right": "2",
+                            "bottom": "2",
+                            "left": "2",
+                            "isLinked": true
+                        },
+                        "hide_tablet": "hidden-tablet",
+                        "hide_mobile": "hidden-phone"
+                    },
+                    "elements": [
+                        {
+                            "id": "4acfa1dd",
+                            "settings": {
+                                "carousel": [
+                                    {
+                                        "id": 286,
+                                        "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/clothes-shop-interior-PTD6SX7.jpg"
+                                    },
+                                    {
+                                        "id": 284,
+                                        "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/modern-office-with-desk-and-bookcase-7TBZAN8.jpg"
+                                    },
+                                    {
+                                        "id": 283,
+                                        "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/interior-with-dining-table-PRPTKDT.jpg"
+                                    },
+                                    {
+                                        "id": 282,
+                                        "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/spacious-grey-living-room-interior-2XERHJN.jpg"
+                                    }
+                                ],
+                                "thumbnail_size": "full",
+                                "navigation": "none",
+                                "image_spacing": "custom",
+                                "slides_to_show": "2"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "image-carousel",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "6a314963",
+                            "settings": {
+                                "carousel": [
+                                    {
+                                        "id": 286,
+                                        "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/clothes-shop-interior-PTD6SX7.jpg"
+                                    },
+                                    {
+                                        "id": 284,
+                                        "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/modern-office-with-desk-and-bookcase-7TBZAN8.jpg"
+                                    },
+                                    {
+                                        "id": 283,
+                                        "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/interior-with-dining-table-PRPTKDT.jpg"
+                                    },
+                                    {
+                                        "id": 282,
+                                        "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/spacious-grey-living-room-interior-2XERHJN.jpg"
+                                    }
+                                ],
+                                "thumbnail_size": "full",
+                                "navigation": "none",
+                                "image_spacing": "custom"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "image-carousel",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        },
+        {
+            "id": "407e287f",
+            "settings": {
+                "height": "min-height",
+                "custom_height": {
+                    "unit": "px",
+                    "size": 90,
+                    "sizes": []
+                },
+                "background_background": "classic",
+                "__globals__": {
+                    "background_color": "globals\/colors?id=secondary"
+                },
+                "structure": "30"
+            },
+            "elements": [
+                {
+                    "id": "11aaf6a5",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 60.613
+                    },
+                    "elements": [
+                        {
+                            "id": "3d7164f7",
+                            "settings": {
+                                "title": "Copyright 2021 \u00a9 Housedeco | Powered by Rometheme Studio",
+                                "header_size": "p",
+                                "__globals__": {
+                                    "title_color": "globals\/colors?id=0d05fc2"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                },
+                {
+                    "id": "79be98f1",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 32.471,
+                        "content_position": "center"
+                    },
+                    "elements": [
+                        {
+                            "id": "4b1cd7be",
+                            "settings": {
+                                "view": "inline",
+                                "icon_list": [
+                                    {
+                                        "text": "Facebook",
+                                        "selected_icon": {
+                                            "value": "",
+                                            "library": ""
+                                        },
+                                        "_id": "9b74fb2"
+                                    },
+                                    {
+                                        "text": "Instagram",
+                                        "selected_icon": {
+                                            "value": "",
+                                            "library": ""
+                                        },
+                                        "_id": "a20e997"
+                                    },
+                                    {
+                                        "text": "Pinterest",
+                                        "selected_icon": {
+                                            "value": "",
+                                            "library": ""
+                                        },
+                                        "_id": "1de3f44"
+                                    }
+                                ],
+                                "icon_align": "right",
+                                "__globals__": {
+                                    "text_color": "globals\/colors?id=primary",
+                                    "text_color_hover": "globals\/colors?id=0d05fc2"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "icon-list",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                },
+                {
+                    "id": "528f7275",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": 6.221,
+                        "background_background": "classic",
+                        "margin": {
+                            "unit": "px",
+                            "top": "10",
+                            "right": "10",
+                            "bottom": "10",
+                            "left": "10",
+                            "isLinked": true
+                        },
+                        "__globals__": {
+                            "background_color": "globals\/colors?id=ba576bd"
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "6b3aa39",
+                            "settings": {
+                                "selected_icon": {
+                                    "value": "fas fa-arrow-up",
+                                    "library": "fa-solid"
+                                },
+                                "link": {
+                                    "url": "#top",
+                                    "is_external": "",
+                                    "nofollow": "",
+                                    "custom_attributes": ""
+                                },
+                                "size": {
+                                    "unit": "px",
+                                    "size": 15,
+                                    "sizes": []
+                                },
+                                "__globals__": {
+                                    "primary_color": "globals\/colors?id=0d05fc2",
+                                    "hover_primary_color": "globals\/colors?id=primary"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "icon",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        }
+    ]
+}

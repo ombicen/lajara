@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Logo } from 'src/elements'
 import Link from 'next/link'
 import { useDevices } from 'src/utils/LayoutHandler'
+import Router from 'next/router';
 
 const Menubar = ({ menuItems = [] }) => {
 
@@ -14,6 +15,12 @@ const Menubar = ({ menuItems = [] }) => {
 
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
+
+   useEffect(() => {
+   Router.events.on('routeChangeComplete', () =>  setSidebarOpen(false));
+     
+    
+  }, [Router.events]);
     return (
         <Style className={`menubar ${sidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
             <div className="contained">

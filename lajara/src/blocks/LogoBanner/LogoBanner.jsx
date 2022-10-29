@@ -60,6 +60,9 @@ const Style = styled.section`
                 
                 span {
                     display: block !important;
+                    img{
+                        filter: brightness(1000) grayscale(1);
+                    }
                 }
             }
         }

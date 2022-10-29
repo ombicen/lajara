@@ -8,7 +8,7 @@ export async function getStaticProps(context) {
     const project = await Wordpress.getProjectBySlug(context.params.slug) ?? null;
     const menu = await Wordpress.getMenu() ?? null
     const options = await Wordpress.getOptions() ?? null
-    console.log(options);
+   
     if (project == null) {
         return {
             notFound: true,
@@ -44,7 +44,6 @@ export default function ProjectRoute({ project, options }) {
 
     let featuredMedia = project['_embedded']['wp:featuredmedia']?.[0];
 
-    console.log(project)
 
     return <Project project={project} options={options} data={{
         title: project.title.rendered,

@@ -1,0 +1,1181 @@
+{
+    "version": "0.4",
+    "title": "Pricing",
+    "type": "page",
+    "metadata": {
+        "template_type": "single-page",
+        "include_in_zip": "1",
+        "elementor_pro_required": null,
+        "wp_page_template": "elementor_header_footer"
+    },
+    "content": [
+        {
+            "id": "5018aba4",
+            "settings": {
+                "height": "min-height",
+                "custom_height": {
+                    "unit": "px",
+                    "size": 500,
+                    "sizes": []
+                },
+                "background_background": "classic",
+                "background_image": {
+                    "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/spacious-grey-living-room-interior-2XERHJN.jpg",
+                    "id": 282
+                },
+                "background_position": "center center",
+                "background_size": "cover",
+                "background_overlay_background": "classic",
+                "background_overlay_image": {
+                    "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/line.png",
+                    "id": 9
+                },
+                "background_overlay_opacity": {
+                    "unit": "px",
+                    "size": 1,
+                    "sizes": []
+                },
+                "__globals__": {
+                    "background_overlay_color": "globals\/colors?id=20c1a8f"
+                },
+                "background_overlay_position": "center center",
+                "background_overlay_size": "cover"
+            },
+            "elements": [
+                {
+                    "id": "67fb0b58",
+                    "settings": {
+                        "_column_size": 100,
+                        "_inline_size": null,
+                        "padding": {
+                            "unit": "em",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "7df303ed",
+                            "settings": {
+                                "title": "pricing",
+                                "__globals__": {
+                                    "title_color": "globals\/colors?id=0d05fc2"
+                                },
+                                "header_size": "h1",
+                                "align_tablet": "center"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "32b6f67c",
+                            "settings": {
+                                "editor": "<p><a href=\"#\">HOME<\/a> \/ pricing<\/p>",
+                                "__globals__": {
+                                    "typography_typography": "globals\/typography?id=d3d14ab",
+                                    "text_color": "globals\/colors?id=0d05fc2"
+                                },
+                                "align_tablet": "center"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        },
+        {
+            "id": "3aee867b",
+            "settings": {
+                "structure": "20",
+                "padding": {
+                    "unit": "em",
+                    "top": "6",
+                    "right": "1",
+                    "bottom": "6",
+                    "left": "1",
+                    "isLinked": false
+                }
+            },
+            "elements": [
+                {
+                    "id": "6132d6d1",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": null,
+                        "padding": {
+                            "unit": "em",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "4b874a07",
+                            "settings": {
+                                "image": {
+                                    "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/3d-rendering-loft-luxury-bedroom-with-make-up-tabl-2W4T6BM.jpg",
+                                    "id": 297
+                                },
+                                "image_size": "full"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "image",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                },
+                {
+                    "id": "158b24f1",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": null,
+                        "padding": {
+                            "unit": "em",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "content_position": "center"
+                    },
+                    "elements": [
+                        {
+                            "id": "62df4778",
+                            "settings": {
+                                "title": "IMPROVING YOUR LIFE",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "600",
+                                "typography_text_transform": "uppercase",
+                                "header_size": "h4",
+                                "__globals__": {
+                                    "title_color": ""
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "37078552",
+                            "settings": {
+                                "title": "make your living space "
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "79f75b32",
+                            "settings": {
+                                "editor": "<p>Vivamus vehicula nulla elit, ut gravida nunc accumsan nec. Aenean leo orci, posuere quis rhoncus ut, semper sit amet tortor. Mauris eget augue vel dui vehicula finibus. Sed posuere commodo odio sit amet facilisis. Vestibulum tristique diam at imperdiet blandit.<\/p><p>Nulla feugiat aliquam blandit. Etiam id ultricies erat. Suspendisse malesuada, neque et auctor efficitur, sem nisl ullamcorper nisl, quis tincidunt nisi libero ut sapien. Mauris a vulputate mi.<\/p>"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        },
+        {
+            "id": "3c68ad7a",
+            "settings": {
+                "structure": "20",
+                "background_background": "gradient",
+                "background_color": "#1D1D1D00",
+                "background_color_b_stop": {
+                    "unit": "%",
+                    "size": 0,
+                    "sizes": []
+                },
+                "padding": {
+                    "unit": "em",
+                    "top": "6",
+                    "right": "1",
+                    "bottom": "6",
+                    "left": "1",
+                    "isLinked": false
+                },
+                "z_index": 80,
+                "__globals__": {
+                    "background_color": "",
+                    "background_color_b": "globals\/colors?id=bff39c7"
+                }
+            },
+            "elements": [
+                {
+                    "id": "32acb987",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": null,
+                        "content_position": "center",
+                        "background_color": "#1D1D1D00",
+                        "background_color_b_stop": {
+                            "unit": "%",
+                            "size": 0,
+                            "sizes": []
+                        },
+                        "padding": {
+                            "unit": "em",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "__globals__": {
+                            "background_color": "",
+                            "background_color_b": "globals\/colors?id=bff39c7"
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "72e7e7e5",
+                            "settings": {
+                                "title": "IMPROVING YOUR LIFE",
+                                "typography_font_family": "Lato",
+                                "typography_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "typography_font_weight": "600",
+                                "typography_text_transform": "uppercase",
+                                "header_size": "h4",
+                                "__globals__": {
+                                    "title_color": ""
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "795158a4",
+                            "settings": {
+                                "title": "Great offer<br> for you"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "heading",
+                            "elType": "widget"
+                        },
+                        {
+                            "id": "7b0b8e95",
+                            "settings": {
+                                "editor": "<p>Integer eleifend at tortor et finibus. Pellentesque nec nisi arcu. Ut ante ex, pulvinar eget purus nec, varius rutrum erat. Aliquam elementum non sapien pretium faucibus. In convallis maximus turpis.<\/p>"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "text-editor",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                },
+                {
+                    "id": "3cb17c8e",
+                    "settings": {
+                        "_column_size": 50,
+                        "_inline_size": null,
+                        "padding": {
+                            "unit": "em",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "7b2371ab",
+                            "settings": {
+                                "image": {
+                                    "url": "http:\/\/tykit.rometheme.pro\/housedeco\/wp-content\/uploads\/sites\/2\/2021\/05\/modern-office-with-desk-and-bookcase-7TBZAN8.jpg",
+                                    "id": 284
+                                },
+                                "image_size": "full",
+                                "align": "left",
+                                "width": {
+                                    "unit": "%",
+                                    "size": 95,
+                                    "sizes": []
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "image",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        },
+        {
+            "id": "5e191146",
+            "settings": {
+                "structure": "30",
+                "margin": {
+                    "unit": "em",
+                    "top": "-7",
+                    "right": 0,
+                    "bottom": "-7",
+                    "left": 0,
+                    "isLinked": true
+                },
+                "padding": {
+                    "unit": "em",
+                    "top": "0",
+                    "right": "1",
+                    "bottom": "10",
+                    "left": "1",
+                    "isLinked": false
+                },
+                "z_index": 81
+            },
+            "elements": [
+                {
+                    "id": "38620c8a",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": null,
+                        "_inline_size_tablet": 50,
+                        "background_background": "classic",
+                        "padding": {
+                            "unit": "em",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "__globals__": {
+                            "background_color": ""
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "527fa86b",
+                            "settings": {
+                                "ekit_pricing_table_title": "Design advices",
+                                "ekit_pricing_title_size": "h4",
+                                "ekit_pricing_table_subtitle": "Donec rutrum felis est, at sollicitudin dui auctor vel",
+                                "ekit_pricing_currency_icon": "$",
+                                "ekit_pricing_table_price": "800",
+                                "ekit_pricing_table_duration": " ",
+                                "ekit_pricing_content_style": "list",
+                                "ekit_pricing_table_content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+                                "ekit_pricing_table_content_repeater": [
+                                    {
+                                        "item": "15 Email Account",
+                                        "check_icon": "icon icon-tick",
+                                        "_id": "3e18b4d",
+                                        "ekit_pricing_list": "General living space advices"
+                                    },
+                                    {
+                                        "item": "100 GB Space",
+                                        "check_icon": "icon icon-tick",
+                                        "_id": "e984bac",
+                                        "ekit_pricing_list": "Rennovation advices"
+                                    },
+                                    {
+                                        "item": "1 Domain Name",
+                                        "check_icon": "icon icon-tick",
+                                        "_id": "22a237e",
+                                        "ekit_pricing_list": "Interior design advices"
+                                    },
+                                    {
+                                        "_id": "23ebce0",
+                                        "ekit_pricing_list": "Furniture reorganization"
+                                    }
+                                ],
+                                "ekit_pricing_btn_text": "contact us",
+                                "ekit_pricing_title_text_color": "#E4BB7D",
+                                "ekit_pricing_title_typography_group_typography": "custom",
+                                "ekit_pricing_title_typography_group_font_family": "Lato",
+                                "ekit_pricing_title_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_title_typography_group_font_weight": "bold",
+                                "ekit_pricing_title_typography_group_text_transform": "uppercase",
+                                "ekit_pricing_title_typography_group_line_height": {
+                                    "unit": "em",
+                                    "size": 1.25,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_title_text_padding": {
+                                    "unit": "em",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "ekit_pricing_subtitle_text_color": "#1D1D1D",
+                                "ekit_pricing_subtitle_typography_group_typography": "custom",
+                                "ekit_pricing_subtitle_typography_group_font_family": "Heebo",
+                                "ekit_pricing_subtitle_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 16,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_subtitle_typography_group_font_weight": "400",
+                                "ekit_pricing_subtitle_text_padding": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": false
+                                },
+                                "ekit_pricing_tag_right": {
+                                    "unit": "px",
+                                    "size": -18,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_tag_width_width": {
+                                    "unit": "px",
+                                    "size": 304,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_tag_text_padding": {
+                                    "unit": "px",
+                                    "top": "8",
+                                    "right": "8",
+                                    "bottom": "8",
+                                    "left": "8",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_tag_text_margin": {
+                                    "unit": "em",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_price_typography_group_typography": "custom",
+                                "ekit_pricing_price_typography_group_font_family": "Lato",
+                                "ekit_pricing_price_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 48,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_price_typography_group_font_weight": "bold",
+                                "ekit_pricing_price_typography_group_text_transform": "uppercase",
+                                "ekit_pricing_price_typography_group_line_height": {
+                                    "unit": "em",
+                                    "size": 1.25,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_tag_text_color": "#FFFFFF",
+                                "ekit_pricing_tag_bg_color_background": "classic",
+                                "ekit_pricing_tag_bg_color_color": "#1D1D1D",
+                                "ekit_pricing_tag_border_dimensions": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_tag_border_radius": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_content_typography_group_typography": "custom",
+                                "ekit_pricing_content_typography_group_font_family": "Lato",
+                                "ekit_pricing_content_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 14,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_content_typography_group_font_weight": "bold",
+                                "ekit_pricing_content_typography_group_text_transform": "uppercase",
+                                "ekit_pricing_content_typography_group_line_height": {
+                                    "unit": "em",
+                                    "size": 1.25,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_features_body_margin": {
+                                    "unit": "px",
+                                    "top": "30",
+                                    "right": "30",
+                                    "bottom": "30",
+                                    "left": "30",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_features_body_padding": {
+                                    "unit": "em",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": false
+                                },
+                                "ekit_pricing_btn_bg_color_group_background": "classic",
+                                "ekit_pricing_btn_bg_hover_color_group_background": "classic",
+                                "ekit_pricing_text_padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "30",
+                                    "bottom": "15",
+                                    "left": "30",
+                                    "isLinked": false
+                                },
+                                "ekit_pricing_btn_border_radius": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": false
+                                },
+                                "_padding": {
+                                    "unit": "em",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "_background_background": "classic",
+                                "_box_shadow_box_shadow_type": "yes",
+                                "_box_shadow_box_shadow": {
+                                    "horizontal": -7,
+                                    "vertical": 13,
+                                    "blur": 10,
+                                    "spread": 0,
+                                    "color": "rgba(0, 0, 0, 0.03)"
+                                },
+                                "__globals__": {
+                                    "ekit_pricing_title_typography_group_typography": "globals\/typography?id=c38efba",
+                                    "ekit_pricing_subtitle_typography_group_typography": "globals\/typography?id=text",
+                                    "ekit_pricing_price_typography_group_typography": "globals\/typography?id=c4360e7",
+                                    "ekit_pricing_period_text_color": "",
+                                    "ekit_pricing_tag_text_color": "globals\/colors?id=0d05fc2",
+                                    "ekit_pricing_tag_bg_color_color": "globals\/colors?id=secondary",
+                                    "ekit_pricing_title_text_color": "globals\/colors?id=primary",
+                                    "ekit_pricing_subtitle_text_color": "globals\/colors?id=text",
+                                    "ekit_pricing_content_typography_group_typography": "globals\/typography?id=c834c44",
+                                    "ekit_pricing_content_hover_color": "",
+                                    "ekit_pricing_btn_typography_group_typography": "globals\/typography?id=d3d14ab",
+                                    "ekit_pricing_btn_text_color": "globals\/colors?id=0d05fc2",
+                                    "ekit_pricing_btn_bg_color_group_color": "globals\/colors?id=secondary",
+                                    "ekit_pricing_btn_bg_hover_color_group_color": "globals\/colors?id=primary",
+                                    "_background_color": "globals\/colors?id=0d05fc2"
+                                },
+                                "ekit_pricing_btn_icons__switch": ""
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "elementskit-pricing",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                },
+                {
+                    "id": "41ce4857",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": null,
+                        "_inline_size_tablet": 50,
+                        "padding": {
+                            "unit": "em",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "73cf04b",
+                            "settings": {
+                                "ekit_pricing_table_title": "Furniture design",
+                                "ekit_pricing_title_size": "h4",
+                                "ekit_pricing_table_subtitle": "Donec rutrum felis est, at sollicitudin dui auctor vel",
+                                "ekit_pricing_currency_icon": "$",
+                                "ekit_pricing_table_price": "900",
+                                "ekit_pricing_table_duration": " ",
+                                "ekit_pricing_content_style": "list",
+                                "ekit_pricing_table_content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+                                "ekit_pricing_table_content_repeater": [
+                                    {
+                                        "item": "15 Email Account",
+                                        "check_icon": "icon icon-tick",
+                                        "_id": "3e18b4d",
+                                        "ekit_pricing_list": "Furniture for living room"
+                                    },
+                                    {
+                                        "item": "100 GB Space",
+                                        "check_icon": "icon icon-tick",
+                                        "_id": "e984bac",
+                                        "ekit_pricing_list": "Furniture refurbishment"
+                                    },
+                                    {
+                                        "item": "1 Domain Name",
+                                        "check_icon": "icon icon-tick",
+                                        "_id": "22a237e",
+                                        "ekit_pricing_list": "Sofas and amchairs"
+                                    },
+                                    {
+                                        "_id": "23ebce0",
+                                        "ekit_pricing_list": "Tables and chairs"
+                                    }
+                                ],
+                                "ekit_pricing_btn_text": "contact us",
+                                "ekit_pricing_title_text_color": "#E4BB7D",
+                                "ekit_pricing_title_typography_group_typography": "custom",
+                                "ekit_pricing_title_typography_group_font_family": "Lato",
+                                "ekit_pricing_title_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_title_typography_group_font_weight": "bold",
+                                "ekit_pricing_title_typography_group_text_transform": "uppercase",
+                                "ekit_pricing_title_typography_group_line_height": {
+                                    "unit": "em",
+                                    "size": 1.25,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_title_text_padding": {
+                                    "unit": "em",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "ekit_pricing_subtitle_text_color": "#1D1D1D",
+                                "ekit_pricing_subtitle_typography_group_typography": "custom",
+                                "ekit_pricing_subtitle_typography_group_font_family": "Heebo",
+                                "ekit_pricing_subtitle_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 16,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_subtitle_typography_group_font_weight": "400",
+                                "ekit_pricing_subtitle_text_padding": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": false
+                                },
+                                "ekit_pricing_tag_right": {
+                                    "unit": "px",
+                                    "size": -18,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_tag_width_width": {
+                                    "unit": "px",
+                                    "size": 304,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_tag_text_padding": {
+                                    "unit": "px",
+                                    "top": "8",
+                                    "right": "8",
+                                    "bottom": "8",
+                                    "left": "8",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_tag_text_margin": {
+                                    "unit": "em",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_price_typography_group_typography": "custom",
+                                "ekit_pricing_price_typography_group_font_family": "Lato",
+                                "ekit_pricing_price_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 48,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_price_typography_group_font_weight": "bold",
+                                "ekit_pricing_price_typography_group_text_transform": "uppercase",
+                                "ekit_pricing_price_typography_group_line_height": {
+                                    "unit": "em",
+                                    "size": 1.25,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_tag_text_color": "#FFFFFF",
+                                "ekit_pricing_tag_bg_color_background": "classic",
+                                "ekit_pricing_tag_bg_color_color": "#1D1D1D",
+                                "ekit_pricing_tag_border_dimensions": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_tag_border_radius": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_content_typography_group_typography": "custom",
+                                "ekit_pricing_content_typography_group_font_family": "Lato",
+                                "ekit_pricing_content_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 14,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_content_typography_group_font_weight": "bold",
+                                "ekit_pricing_content_typography_group_text_transform": "uppercase",
+                                "ekit_pricing_content_typography_group_line_height": {
+                                    "unit": "em",
+                                    "size": 1.25,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_features_body_margin": {
+                                    "unit": "px",
+                                    "top": "30",
+                                    "right": "30",
+                                    "bottom": "30",
+                                    "left": "30",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_features_body_padding": {
+                                    "unit": "em",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": false
+                                },
+                                "ekit_pricing_btn_bg_color_group_background": "classic",
+                                "ekit_pricing_btn_bg_hover_color_group_background": "classic",
+                                "ekit_pricing_text_padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "30",
+                                    "bottom": "15",
+                                    "left": "30",
+                                    "isLinked": false
+                                },
+                                "ekit_pricing_btn_border_radius": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": false
+                                },
+                                "_padding": {
+                                    "unit": "em",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "_background_background": "classic",
+                                "_box_shadow_box_shadow_type": "yes",
+                                "_box_shadow_box_shadow": {
+                                    "horizontal": -7,
+                                    "vertical": 13,
+                                    "blur": 10,
+                                    "spread": 0,
+                                    "color": "rgba(0, 0, 0, 0.03)"
+                                },
+                                "__globals__": {
+                                    "ekit_pricing_title_typography_group_typography": "globals\/typography?id=c38efba",
+                                    "ekit_pricing_subtitle_typography_group_typography": "globals\/typography?id=text",
+                                    "ekit_pricing_price_typography_group_typography": "globals\/typography?id=c4360e7",
+                                    "ekit_pricing_period_text_color": "",
+                                    "ekit_pricing_tag_text_color": "globals\/colors?id=0d05fc2",
+                                    "ekit_pricing_tag_bg_color_color": "globals\/colors?id=secondary",
+                                    "ekit_pricing_title_text_color": "globals\/colors?id=primary",
+                                    "ekit_pricing_subtitle_text_color": "globals\/colors?id=text",
+                                    "ekit_pricing_content_typography_group_typography": "globals\/typography?id=c834c44",
+                                    "ekit_pricing_content_hover_color": "",
+                                    "ekit_pricing_btn_typography_group_typography": "globals\/typography?id=d3d14ab",
+                                    "ekit_pricing_btn_text_color": "globals\/colors?id=0d05fc2",
+                                    "ekit_pricing_btn_bg_color_group_color": "globals\/colors?id=secondary",
+                                    "ekit_pricing_btn_bg_hover_color_group_color": "globals\/colors?id=primary",
+                                    "_background_color": "globals\/colors?id=0d05fc2"
+                                }
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "elementskit-pricing",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                },
+                {
+                    "id": "6c855b3a",
+                    "settings": {
+                        "_column_size": 33,
+                        "_inline_size": null,
+                        "_inline_size_tablet": 50,
+                        "margin": {
+                            "unit": "em",
+                            "top": "-3",
+                            "right": "0",
+                            "bottom": "0",
+                            "left": "0",
+                            "isLinked": false
+                        },
+                        "margin_tablet": {
+                            "unit": "px",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "margin_mobile": {
+                            "unit": "px",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "padding": {
+                            "unit": "em",
+                            "top": "1",
+                            "right": "1",
+                            "bottom": "1",
+                            "left": "1",
+                            "isLinked": true
+                        },
+                        "padding_mobile": {
+                            "unit": "em",
+                            "top": "",
+                            "right": "",
+                            "bottom": "",
+                            "left": "",
+                            "isLinked": true
+                        },
+                        "background_background": "classic",
+                        "__globals__": {
+                            "background_color": ""
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "29bba681",
+                            "settings": {
+                                "ekit_pricing_table_title": "Complete interior design",
+                                "ekit_pricing_title_size": "h4",
+                                "ekit_pricing_table_subtitle": "Donec rutrum felis est, at sollicitudin dui auctor vel",
+                                "ekit_pricing_currency_icon": "$",
+                                "ekit_pricing_table_price": "1200",
+                                "ekit_pricing_table_duration": " ",
+                                "ekit_pricing_content_style": "list",
+                                "ekit_pricing_table_content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+                                "ekit_pricing_table_content_repeater": [
+                                    {
+                                        "item": "15 Email Account",
+                                        "check_icon": "icon icon-tick",
+                                        "_id": "3e18b4d",
+                                        "ekit_pricing_list": "General living space advices"
+                                    },
+                                    {
+                                        "item": "100 GB Space",
+                                        "check_icon": "icon icon-tick",
+                                        "_id": "e984bac",
+                                        "ekit_pricing_list": "Rennovation advices"
+                                    },
+                                    {
+                                        "item": "1 Domain Name",
+                                        "check_icon": "icon icon-tick",
+                                        "_id": "22a237e",
+                                        "ekit_pricing_list": "Interior design advices"
+                                    },
+                                    {
+                                        "_id": "23ebce0",
+                                        "ekit_pricing_list": "Furniture reorganization"
+                                    },
+                                    {
+                                        "_id": "3c796a5",
+                                        "ekit_pricing_list": "Large project included"
+                                    },
+                                    {
+                                        "_id": "f2a8bad",
+                                        "ekit_pricing_list": "Complete home redesign"
+                                    },
+                                    {
+                                        "_id": "1cca03a",
+                                        "ekit_pricing_list": "Interior and exterior works"
+                                    }
+                                ],
+                                "ekit_pricing_btn_text": "contact us",
+                                "ekit_pricing_title_text_color": "#FFFFFF",
+                                "ekit_pricing_title_typography_group_typography": "custom",
+                                "ekit_pricing_title_typography_group_font_family": "Lato",
+                                "ekit_pricing_title_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 20,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_title_typography_group_font_weight": "bold",
+                                "ekit_pricing_title_typography_group_text_transform": "uppercase",
+                                "ekit_pricing_title_typography_group_line_height": {
+                                    "unit": "em",
+                                    "size": 1.25,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_title_text_padding": {
+                                    "unit": "em",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": false
+                                },
+                                "ekit_pricing_subtitle_text_color": "#FFFFFF",
+                                "ekit_pricing_subtitle_typography_group_typography": "custom",
+                                "ekit_pricing_subtitle_typography_group_font_family": "Heebo",
+                                "ekit_pricing_subtitle_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 16,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_subtitle_typography_group_font_weight": "400",
+                                "ekit_pricing_subtitle_text_padding": {
+                                    "unit": "px",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": false
+                                },
+                                "ekit_pricing_tag_right": {
+                                    "unit": "px",
+                                    "size": -18,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_tag_width_width": {
+                                    "unit": "px",
+                                    "size": 304,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_tag_text_padding": {
+                                    "unit": "px",
+                                    "top": "8",
+                                    "right": "8",
+                                    "bottom": "8",
+                                    "left": "8",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_tag_text_margin": {
+                                    "unit": "em",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_price_typography_group_typography": "custom",
+                                "ekit_pricing_price_typography_group_font_family": "Lato",
+                                "ekit_pricing_price_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 48,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_price_typography_group_font_weight": "bold",
+                                "ekit_pricing_price_typography_group_text_transform": "uppercase",
+                                "ekit_pricing_price_typography_group_line_height": {
+                                    "unit": "em",
+                                    "size": 1.25,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_tag_text_color": "#FFFFFF",
+                                "ekit_pricing_tag_bg_color_background": "classic",
+                                "ekit_pricing_tag_bg_color_color": "#E4BB7D",
+                                "ekit_pricing_tag_border_dimensions": {
+                                    "unit": "px",
+                                    "top": "0",
+                                    "right": "0",
+                                    "bottom": "0",
+                                    "left": "0",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_tag_border_radius": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_content_typography_group_typography": "custom",
+                                "ekit_pricing_content_typography_group_font_family": "Lato",
+                                "ekit_pricing_content_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 14,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_content_typography_group_font_weight": "bold",
+                                "ekit_pricing_content_typography_group_text_transform": "uppercase",
+                                "ekit_pricing_content_typography_group_line_height": {
+                                    "unit": "em",
+                                    "size": 1.25,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_features_body_margin": {
+                                    "unit": "px",
+                                    "top": "30",
+                                    "right": "30",
+                                    "bottom": "30",
+                                    "left": "30",
+                                    "isLinked": true
+                                },
+                                "ekit_pricing_features_body_padding": {
+                                    "unit": "em",
+                                    "top": "",
+                                    "right": "",
+                                    "bottom": "",
+                                    "left": "",
+                                    "isLinked": false
+                                },
+                                "ekit_pricing_btn_bg_color_group_background": "classic",
+                                "ekit_pricing_btn_bg_hover_color_group_background": "classic",
+                                "ekit_pricing_text_padding": {
+                                    "unit": "px",
+                                    "top": "15",
+                                    "right": "30",
+                                    "bottom": "15",
+                                    "left": "30",
+                                    "isLinked": false
+                                },
+                                "ekit_pricing_btn_border_radius": {
+                                    "unit": "px",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": false
+                                },
+                                "_padding": {
+                                    "unit": "em",
+                                    "top": "1",
+                                    "right": "1",
+                                    "bottom": "1",
+                                    "left": "1",
+                                    "isLinked": true
+                                },
+                                "_background_background": "classic",
+                                "_box_shadow_box_shadow_type": "yes",
+                                "_box_shadow_box_shadow": {
+                                    "horizontal": -7,
+                                    "vertical": 13,
+                                    "blur": 10,
+                                    "spread": 0,
+                                    "color": "rgba(0, 0, 0, 0.15)"
+                                },
+                                "__globals__": {
+                                    "ekit_pricing_title_typography_group_typography": "globals\/typography?id=c38efba",
+                                    "ekit_pricing_subtitle_typography_group_typography": "globals\/typography?id=text",
+                                    "ekit_pricing_price_typography_group_typography": "globals\/typography?id=c4360e7",
+                                    "ekit_pricing_period_text_color": "",
+                                    "ekit_pricing_tag_text_color": "globals\/colors?id=0d05fc2",
+                                    "ekit_pricing_tag_bg_color_color": "globals\/colors?id=primary",
+                                    "ekit_pricing_title_text_color": "globals\/colors?id=0d05fc2",
+                                    "ekit_pricing_subtitle_text_color": "globals\/colors?id=0d05fc2",
+                                    "ekit_pricing_content_typography_group_typography": "globals\/typography?id=c834c44",
+                                    "ekit_pricing_content_hover_color": "",
+                                    "ekit_pricing_btn_typography_group_typography": "globals\/typography?id=d3d14ab",
+                                    "ekit_pricing_btn_text_color": "globals\/colors?id=0d05fc2",
+                                    "ekit_pricing_btn_bg_color_group_color": "globals\/colors?id=primary",
+                                    "ekit_pricing_btn_bg_hover_color_group_color": "",
+                                    "_background_color": "globals\/colors?id=secondary",
+                                    "ekit_pricing_pricing_body_bg_sp": "",
+                                    "ekit_pricing_content_text_color": "globals\/colors?id=0d05fc2"
+                                },
+                                "ekit_pricing_content_text_color": "#FFFFFF",
+                                "ekit_pricing_btn_typography_group_typography": "custom",
+                                "ekit_pricing_btn_typography_group_font_family": "Heebo",
+                                "ekit_pricing_btn_typography_group_font_size": {
+                                    "unit": "px",
+                                    "size": 15,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_btn_typography_group_font_size_mobile": {
+                                    "unit": "px",
+                                    "size": 10,
+                                    "sizes": []
+                                },
+                                "ekit_pricing_btn_typography_group_text_transform": "uppercase",
+                                "ekit_pricing_btn_text_color": "#FFFFFF",
+                                "ekit_pricing_btn_bg_color_group_color": "#E4BB7D",
+                                "_background_color": "#1D1D1D"
+                            },
+                            "elements": [],
+                            "isInner": false,
+                            "widgetType": "elementskit-pricing",
+                            "elType": "widget"
+                        }
+                    ],
+                    "isInner": false,
+                    "elType": "column"
+                }
+            ],
+            "isInner": false,
+            "elType": "section"
+        }
+    ]
+}

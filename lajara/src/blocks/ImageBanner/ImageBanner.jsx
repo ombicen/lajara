@@ -7,17 +7,18 @@ const ImageBanner = ({ image, html, textColor = 'white' }) => {
 
     return (
         <Style className={`color-${textColor}`}>
-            
-            {image?.src && <Image 
+
+            {image?.src && <Image
                 width={1920}
                 height={500}
                 src={image.src}
                 alt={image.alt}
                 objectFit={'cover'}
+                quality={90}
             />}
 
             <div className="contained extra-small">
-                <div className="text" dangerouslySetInnerHTML={{__html: html}} />
+                <div className="text" dangerouslySetInnerHTML={{ __html: html }} />
             </div>
 
 
@@ -52,6 +53,9 @@ const Style = styled.section`
         position: relative;
         z-index: 1;
         text-align: center;
+    }
+    img{
+        filter:contrast(0.8) brightness(0.7);
     }
 
 `
